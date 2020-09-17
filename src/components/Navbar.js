@@ -15,7 +15,7 @@ function Navbar () {
                     <span className="font-semibold text-xl tracking-tight">ShaneMaglangit</span>
                 </div>
                 {/* Hamburger icon */}
-                <div className="block lg:hidden" onClick={() => toggleExpansion(!isExpanded)} onKeyPress={() => toggleExpansion(!isExpanded)} role="button" tabIndex={0}>
+                <div className="block md:hidden" onClick={() => toggleExpansion(!isExpanded)} onKeyPress={() => toggleExpansion(!isExpanded)} role="button" tabIndex={0}>
                     <button className="flex items-center px-3 py-2 border rounded text-orange-500 border-orange-500 focus:outline-none">
                         <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <title>Menu</title>
@@ -24,7 +24,7 @@ function Navbar () {
                     </button>
                 </div>
                 {/* Wrapper for the navigation items */}
-                <div id="menu-items" className={`${ isExpanded ? `block` : `hidden`} w-full flex-grow lg:flex lg:items-center lg:w-auto lg:block`}>
+                <div id="menu-items" className={`${ isExpanded ? `block` : `hidden`} w-full flex-grow md:flex md:items-center md:w-auto md:block`}>
                     <NavbarItems />
                 </div>
             </nav>
