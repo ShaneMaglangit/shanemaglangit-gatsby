@@ -10,6 +10,7 @@ module.exports = {
     description: "A software developer based on the Philippines.",
   },
   plugins: [
+    "gatsby-plugin-smoothscroll",
     "gatsby-plugin-react-helmet",
     {
       resolve: "gatsby-plugin-manifest",

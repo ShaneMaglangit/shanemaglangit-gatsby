@@ -53,19 +53,19 @@ export default () => {
 
         {/* Layout for the portfolio section */}
         <div id="project" className="w-11/12 mx-auto min-h-screen sm:flex sm:items-center">
-            <sub class="text-white">Portfolio Section</sub>
+            <sub className="text-white">Portfolio Section</sub>
           </div>
 
         {/* Layout for the testimonials section */}
         <div id="testimonial" className="bg-darker min-h-screen">
           <div className="w-11/12 mx-auto min-h-screen sm:flex sm:items-center">
-            <sub class="text-white">Testimonials Section</sub>
+            <sub className="text-white">Testimonials Section</sub>
           </div>
         </div>
 
         {/* Layour for the call to action section */}
         <div className="w-11/12 mx-auto min-h-half sm:flex sm:items-center">
-          <sub class="text-white">Call to Action Section</sub>
+          <sub className="text-white">Call to Action Section</sub>
         </div>
       </main>
     </Layout>
