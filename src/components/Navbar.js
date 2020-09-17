@@ -6,7 +6,7 @@ function Navbar () {
     return (
         <>
             {/* Wrapper for the navigation bar */}
-            <nav className="fixed flex flex-wrap items-center justify-between w-full bg-darker p-6 z-20">
+            <nav className="fixed flex flex-wrap items-center justify-between w-full bg-darker p-6 z-30">
                 {/* Site logo */}
                 <div className="flex items-center flex-shrink-0 text-white mr-6">
                     <svg className="fill-current text-orange-500 h-8 w-8 mr-2" width="54" height="54" viewBox="0 0 54 54" xmlns="http://www.w3.org/2000/svg">
