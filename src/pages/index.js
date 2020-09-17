@@ -42,7 +42,7 @@ export default () => {
                 <div className="bg-orange-500 h-1 w-1/5"></div>
               </div>
               <h1 className="px-4 mt-5 text-6xl text-left text-white font-bold sm:text-3xl">
-                Based on the Philippines,<br />I design and build Software.
+                Based on the Philippines,<br />I am a student and a developer.
               </h1>
               <p className="px-4 pt-4 text-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
