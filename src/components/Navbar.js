@@ -12,7 +12,7 @@ function Navbar () {
                     </svg>
                     <span className="font-semibold text-xl tracking-tight">ShaneMaglangit</span>
                 </div>
-                <div className="block lg:hidden" onClick={() => toggleExpansion(!isExpanded)}>
+                <div className="block lg:hidden" onClick={() => toggleExpansion(!isExpanded)} onKeyPress={() => toggleExpansion(!isExpanded)} role="button" tabIndex={0}>
                     <button className="flex items-center px-3 py-2 border rounded text-orange-500 border-orange-500 focus:outline-none">
                         <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
                             <title>Menu</title>
