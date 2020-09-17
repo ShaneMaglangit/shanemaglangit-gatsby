@@ -6,7 +6,15 @@ module.exports = {
       display: ["Poppins", "sans-serif"],
       body: ["Poppins", "sans-serif"]
     },
-    extend: {}
+    extend: {
+      minHeight: {
+        "half" : "50vh"
+      },
+      colors: {
+        "dark" : "#222222",
+        "darker" : "#1F1F1F"
+      }
+    }
   },
   variants: {},
   plugins: [],

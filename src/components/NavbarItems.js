@@ -3,6 +3,7 @@ import React from "react"
 const NavbarItems = () => {
     return (
         <>
+            {/* Menu items for the navigation */}
             <div className="text-sm lg:flex-grow lg:text-right">
                 <a href="#home" className="block mt-4 mr-4 lg:inline-block font-medium lg:mt-0 text-gray-500">Home</a>
                 <a href="#about" className="block mt-4 mr-4 lg:inline-block font-medium lg:mt-0 text-gray-500">About</a>
