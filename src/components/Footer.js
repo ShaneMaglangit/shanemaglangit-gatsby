@@ -11,9 +11,9 @@ const Footer = () => {
                 </svg>
             </div>
             <div class="py-4">
-                <a href="https://github.com/shanemaglangit" target="_blank" class="px-2">GitHub</a>
-                <a href="https://www.facebook.com/Scoobidiboopao" target="_blank" class="px-2">LinkedIn</a>
-                <a href="https://www.linkedin.com/in/shanemaglangit/" target="_blank" class="px-2">Facebook</a>
+                <Link href="https://github.com/shanemaglangit" target="_blank" class="px-2">GitHub</Link>
+                <Link href="https://www.facebook.com/Scoobidiboopao" target="_blank" class="px-2">LinkedIn</Link>
+                <Link href="https://www.linkedin.com/in/shanemaglangit/" target="_blank" class="px-2">Facebook</Link>
             </div>
             <h3 class="text-lg text-white font-semibold my-2">Walking towards my goal one step at a time</h3>
             Handcrafter by me &copy; 2020
