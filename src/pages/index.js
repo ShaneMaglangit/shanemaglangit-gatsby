@@ -7,7 +7,7 @@ export default () => {
     <Layout>
       <main className="w-full flex-grow flex flex-col justify-around">
         {/* Layout for the header section / hero */}
-        <div className="w-11/12 mx-auto min-h-screen sm:flex sm:items-center">
+        <div id="header" className="w-11/12 mx-auto min-h-screen sm:flex sm:items-center">
           <div className="sm:px-2">
             <div className="flex items-center w-100 px-4 mt-8 sm:mt-8">
               <span className="text-sm text-orange-500 font-semibold pr-2">
@@ -27,7 +27,7 @@ export default () => {
         </div>
 
         {/* Layout for the about section */}
-        <div className="bg-darker min-h-screen">
+        <div id="about" className="bg-darker min-h-screen">
           <div className="w-11/12 mx-auto min-h-screen sm:flex sm:items-center">
             <img
                 className="w-full max-w-xl mt-16 mx-auto sm:w-1/2"
@@ -52,12 +52,12 @@ export default () => {
         </div>
 
         {/* Layout for the portfolio section */}
-        <div className="w-11/12 mx-auto min-h-screen sm:flex sm:items-center">
+        <div id="project" className="w-11/12 mx-auto min-h-screen sm:flex sm:items-center">
             <sub class="text-white">Portfolio Section</sub>
           </div>
 
         {/* Layout for the testimonials section */}
-        <div className="bg-darker min-h-screen">
+        <div id="testimonial" className="bg-darker min-h-screen">
           <div className="w-11/12 mx-auto min-h-screen sm:flex sm:items-center">
             <sub class="text-white">Testimonials Section</sub>
           </div>
