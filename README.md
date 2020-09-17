@@ -11,13 +11,12 @@ Use the following command to install gatsby-cli. This requires you to have Node.
 npm install -g gatsby-cli
 ```
 
-2. **Create your project**
+2. **Start the Project**
 
-Navigate to your project folder and start the development server:
+Once you have a working clone of the project, you may use the following command to start the project.
 
 ```bash
-gatsby create {your-project-name} https://github.com/ShaneMaglangit/shanemaglangit-gatsby
-cd {your-project-name}
+cd {your-project-path}
 gatsby develop
 ```
 
