@@ -1,0 +1,24 @@
+{
+    "testimonials" : [
+        {
+            "name" : "John Doe A",
+            "company" : "ABC Company",
+            "message" : "A placeholder for the feedback or review of this person"
+        },
+        {
+            "name" : "John Doe B",
+            "company" : "ABC Company",
+            "message" : "A placeholder for the feedback or review of this person"
+        },
+        {
+            "name" : "John Doe C",
+            "company" : "ABC Company",
+            "message" : "A placeholder for the feedback or review of this person"
+        },
+        {
+            "name" : "John Doe D",
+            "company" : "ABC Company",
+            "message" : "A placeholder for the feedback or review of this person"
+        }
+    ]
+}

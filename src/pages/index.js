@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from "../components/Layout"
 import heroImage from "../images/hero-image.svg"
+import SiteData from "../../content/site-data.json"
 
 export default () => {
   return (
@@ -53,13 +54,31 @@ export default () => {
 
         {/* Layout for the portfolio section */}
         <div id="project" className="w-11/12 mx-auto min-h-screen sm:flex sm:items-center">
-            <sub className="text-white">Portfolio Section</sub>
+          <div className="w-11/12 mx-auto min-h-screen flex flex-col justify-center items-center">
+            <span className="text-sm text-primary font-semibold pr-2">
+              Projects
+            </span>
+            <h1 className="px-4 text-6xl text-left text-white font-bold sm:text-3xl">
+              Previous Projects
+            </h1>
           </div>
+        </div>
 
         {/* Layout for the testimonials section */}
         <div id="testimonial" className="bg-darker min-h-screen">
-          <div className="w-11/12 mx-auto min-h-screen sm:flex sm:items-center">
-            <sub className="text-white">Testimonials Section</sub>
+          <div className="w-11/12 mx-auto min-h-screen flex flex-col justify-center items-center">
+            <span className="text-sm text-primary font-semibold pr-2">
+              Testimonials
+            </span>
+            <h1 className="px-4 text-6xl text-left text-white font-bold sm:text-3xl">
+              Client Feedbacks
+            </h1>
+            <div className=""></div>
+            <div className=""></div>
+            <div className=""></div>
+              {/* {SiteData.testimonials.map((data, index) => {
+                return <li key={`testimonial_${index}`}>{data.name}</li>
+              })} */}
           </div>
         </div>
 
