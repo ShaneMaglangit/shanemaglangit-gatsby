@@ -11,8 +11,10 @@ module.exports = {
         "half" : "50vh"
       },
       colors: {
+        "light-dark" : "#292929",
         "dark" : "#222222",
-        "darker" : "#1F1F1F"
+        "darker" : "#1F1F1F",
+        "primary" : "#F26C4F"
       }
     }
   },

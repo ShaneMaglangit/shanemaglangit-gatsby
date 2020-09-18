@@ -10,10 +10,10 @@ export default () => {
         <div id="header" className="w-11/12 mx-auto min-h-screen sm:flex sm:items-center">
           <div className="sm:px-2">
             <div className="flex items-center w-100 px-4 mt-8 sm:mt-8">
-              <span className="text-sm text-orange-500 font-semibold pr-2">
+              <span className="text-sm text-primary font-semibold pr-2">
                 Software Developer
               </span>
-              <div className="bg-orange-500 h-1 w-1/6"></div>
+              <div className="bg-primary h-1 w-1/6"></div>
             </div>
             <h1 className="px-4 text-6xl text-left text-white font-bold sm:text-3xl">
               My name is Shane,<br />I design and build Software.
@@ -36,10 +36,10 @@ export default () => {
               />
             <div className="sm:px-2">
               <div className="flex items-center w-100 px-4 mt-8 sm:mt-8">
-                <span className="text-sm text-orange-500 font-semibold pr-2">
+                <span className="text-sm text-primary font-semibold pr-2">
                   About me
                 </span>
-                <div className="bg-orange-500 h-1 w-1/6"></div>
+                <div className="bg-primary h-1 w-1/6"></div>
               </div>
               <h1 className="px-4 text-6xl text-left text-white font-bold sm:text-3xl">
                 Based on the Philippines,<br />I am a student and a developer.
