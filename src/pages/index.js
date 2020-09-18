@@ -64,9 +64,9 @@ export default () => {
         </div>
 
         {/* Layour for the call to action section */}
-        <div className="w-11/12 mx-auto min-h-half sm:flex sm:items-center">
+        {/* <div className="w-11/12 mx-auto min-h-half sm:flex sm:items-center">
           <sub className="text-white">Call to Action Section</sub>
-        </div>
+        </div> */}
       </main>
     </Layout>
   )
