@@ -54,5 +54,19 @@
         "category" : "software",
         "preview" : "../src/images/hero-image.svg",
         "url" : "https://github.com/ShaneMaglangit/NUATReviewer"
+    },
+    {
+        "title" : "NUAT Reviewer",
+        "description" : "Study Tool for NUAT",
+        "category" : "software",
+        "preview" : "../src/images/hero-image.svg",
+        "url" : "https://github.com/ShaneMaglangit/NUATReviewer"
+    },
+    {
+        "title" : "NUAT Reviewer",
+        "description" : "Study Tool for NUAT",
+        "category" : "software",
+        "preview" : "../src/images/hero-image.svg",
+        "url" : "https://github.com/ShaneMaglangit/NUATReviewer"
     }
 ]

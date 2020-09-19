@@ -59,6 +59,7 @@ class ProjectSliderLayout extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
+            selected: "software",
             project: this.props.data.software
         };
     }
@@ -77,10 +78,12 @@ class ProjectSliderLayout extends React.Component {
         return (
             <>
                 <div>
-                    <button onClick={() => this.setState({ project: this.props.data.software })} className="bg-primary text-sm text-white font-semibold py-2 px-4 my-2 mx-2 focus:outline-none">Software Projects</button>
-                    <button onClick={() => this.setState({ project: this.props.data.website })} className="border-2 border-primary text-sm text-white font-semibold py-2 px-4 my-2 mx-2 focus:outline-none">Website Projects</button>
+                    <button onClick={() => this.setState({ project: this.props.data.software, selected: "software"})} className={`${ this.state.selected === "software" ? `bg-primary` : `bg-none`} border-2 border-primary text-sm text-white font-semibold py-2 px-4 my-2 mx-2 focus:outline-none`}>
+                        Software Projects
+                    </button>
+                    <button onClick={() => this.setState({ project: this.props.data.website, selected: "website" })} className={`${ this.state.selected !== "software" ? `bg-primary` : `bg-none`} border-2 border-primary text-sm text-white font-semibold py-2 px-4 my-2 mx-2 focus:outline-none`}>Website Projects</button>
                 </div>
-                <div className="w-full max-h-64 mt-4">
+                <div className="w-full mt-4">
                     <Slider {...settings}>
                         {this.state.project.edges.map(edges => {
                             return (
