@@ -24,7 +24,6 @@ class CircularLinkedList {
 
     addNodes(nodesArray) {
         nodesArray.forEach ((data, _) => { this.add(data.node); });
-        console.log(this[head]);
         return this;
     }
 

@@ -1,0 +1,58 @@
+[
+    {
+        "title" : "Villa Azurea",
+        "description" : "Real Estate Program",
+        "category" : "website",
+        "preview" : "../src/images/villaazurea.png",
+        "url" : "https://exclusive-promotion.immo/"
+    },
+    {
+        "title" : "MyWordz",
+        "description" : "Language Learning Tool",
+        "category" : "website",
+        "preview" : "../src/images/mywordz.png",
+        "url" : "https://www.my-wordz.com/"
+    },
+    {
+        "title" : "Density Design Company",
+        "description" : "Web Design and Development Agency",
+        "category" : "website",
+        "preview" : "../src/images/densitydesigncompany.png",
+        "url" : "https://densitydesigncompany.com/"
+    },
+    {
+        "title" : "Pieces of a Soul",
+        "description" : "Yoga and Meditation Blog Site",
+        "category" : "website",
+        "preview" : "../src/images/piecesofasoul.png",
+        "url" : "https://piecesofasoul.com/"
+    },
+    {
+        "title" : "Resume Deep Dive",
+        "description" : "Personalized Resume and CV Review Service",
+        "category" : "website",
+        "preview" : "../src/images/resumedeepdive.png",
+        "url" : "https://www.resumedeepdive.com/"
+    },
+    {
+        "title" : "Dibaa",
+        "description" : "E-Commerce Store for Herbal Teas",
+        "category" : "website",
+        "preview" : "../src/images/dibaa.png",
+        "url" : "https://www.dibaa.nl/"
+    },
+    {
+        "title" : "Abel Air Conditiong",
+        "description" : "Air Conditiong Hire and Services",
+        "category" : "website",
+        "preview" : "../src/images/abelairconditioning.png",
+        "url" : "http://abelairconditioning.com.au/"
+    },
+    {
+        "title" : "NUAT Reviewer",
+        "description" : "Study Tool for NUAT",
+        "category" : "software",
+        "preview" : "../src/images/hero-image.svg",
+        "url" : "https://github.com/ShaneMaglangit/NUATReviewer"
+    }
+]

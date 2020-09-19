@@ -22,7 +22,7 @@ export default function TestimonialSlider(props) {
     return(
         <StaticQuery
             query={
-                graphql`query MyQuery {
+                graphql`query TestimonialQuery {
                     allTestimonialsJson {
                         edges {
                             node {
