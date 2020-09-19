@@ -7,6 +7,9 @@ module.exports = {
       body: ["Poppins", "sans-serif"]
     },
     extend: {
+      height: {
+        "half" : "75vh"
+      },
       minHeight: {
         "half" : "50vh"
       },
