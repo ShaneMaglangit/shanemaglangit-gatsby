@@ -3,7 +3,7 @@ import React from "react"
 const Contact = () => {
     return (
         <>
-Ad            {/* Main wrapper for the contact section */}
+            {/* Main wrapper for the contact section */}
             <div id="contact" className="w-full flex-grow min-h-screen flex flex-col justify-around">
                 <div className="w-10/12 mx-auto flex content-start ">
                     {/* Left section containing the social links */}

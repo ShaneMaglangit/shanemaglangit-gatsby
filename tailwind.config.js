@@ -23,6 +23,9 @@ module.exports = {
         "dark" : "#222222",
         "darker" : "#1F1F1F",
         "primary" : "#F26C4F"
+      },
+      inset: {
+        "screen-width" : "100vw"
       }
     }
   },
