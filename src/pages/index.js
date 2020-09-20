@@ -9,7 +9,7 @@ const Index = (props) => {
     <Layout>
       <main className="w-full flex-grow flex flex-col justify-around">
         {/* Layout for the header section / hero */}
-        <div id="header" className="w-11/12 mx-auto min-h-screen sm:flex sm:items-center py-16">
+        <div id="header" className="w-11/12 mx-auto min-h-screen sm:flex sm:items-center py-1">
           <div className="sm:px-2">
             <div className="flex items-center w-100 px-4 mt-8 sm:mt-8">
               <span className="text-sm text-primary font-semibold pr-2">
@@ -24,17 +24,17 @@ const Index = (props) => {
           <img
             className="w-full max-w-lg mt-16 mx-auto sm:w-1/2"
             src={heroImage}
-            alt="Hero image"
+            alt="Header Portait"
           />
         </div>
 
         {/* Layout for the about section */}
         <div id="about" className="bg-darker min-h-screen">
-          <div className="w-11/12 mx-auto min-h-screen sm:flex sm:items-center py-16">
+          <div className="w-11/12 mx-auto min-h-screen sm:flex sm:items-center py-1">
             <img
                 className="max-w-xl mt-16 mx-auto sm:w-1/2"
                 src={heroImage}
-                alt="Personal picture"
+                alt="Portrait"
               />
             <div className="sm:px-2">
               <div className="flex items-center w-100 px-4 mt-8 sm:mt-8">
@@ -54,8 +54,8 @@ const Index = (props) => {
         </div>
 
         {/* Layout for the portfolio section */}
-        <div id="project" className="w-11/12 mx-auto min-h-screen py-16">
-          <div className="w-11/12 mx-auto text-center">
+        <div id="project" className="w-11/12 mx-auto flex flex-col items-center justify-center min-h-screen py-1">
+          <div className="w-full flex flex-col items-center">
             <span className="text-sm text-primary font-semibold pr-2">
               Projects
             </span>
@@ -67,8 +67,8 @@ const Index = (props) => {
         </div>
 
         {/* Layout for the testimonials section */}
-        <div id="testimonial" className="bg-darker min-h-screen w-full py-16">
-            <div className="w-11/12 mx-auto min-h-screen flex flex-col justify-center items-stretch">
+        <div id="testimonial" className="bg-darker min-h-screen w-full">
+            <div className="w-11/12 mx-auto min-h-screen flex flex-col justify-center items-stretch py-1">
                 <span className="text-sm text-center text-primary font-semibold pr-2">
                   Testimonials
                 </span>
