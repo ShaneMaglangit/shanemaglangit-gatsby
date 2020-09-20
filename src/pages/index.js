@@ -24,7 +24,7 @@ const Index = (props) => {
           <img
             className="w-full max-w-lg mt-16 mx-auto sm:w-1/2"
             src={heroImage}
-            alt="Gatsby and Tailwind CSS together"
+            alt="Hero image"
           />
         </div>
 
@@ -34,7 +34,7 @@ const Index = (props) => {
             <img
                 className="max-w-xl mt-16 mx-auto sm:w-1/2"
                 src={heroImage}
-                alt="Gatsby and Tailwind CSS together"
+                alt="Personal picture"
               />
             <div className="sm:px-2">
               <div className="flex items-center w-100 px-4 mt-8 sm:mt-8">
