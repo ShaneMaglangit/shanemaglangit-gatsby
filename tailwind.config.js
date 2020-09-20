@@ -12,12 +12,13 @@ module.exports = {
     },
     extend: {
       height: {
-        "half" : "75vh"
+        "screen-60" : "60vh"
       },
       minHeight: {
         "half" : "50vh"
       },
       colors: {
+        "transparent-dark" : "#222222A1",
         "light-dark" : "#292929",
         "dark" : "#222222",
         "darker" : "#1F1F1F",

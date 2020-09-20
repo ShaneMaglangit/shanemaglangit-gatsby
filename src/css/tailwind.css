@@ -11,6 +11,7 @@
 
 /* Track */
 ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     @apply bg-light-dark
@@ -18,6 +19,11 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
     @apply bg-primary
+}
+
+.text-shadow {
+    text-shadow: 1px 1px 4px #000000;
 }
