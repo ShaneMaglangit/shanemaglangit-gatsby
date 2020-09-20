@@ -52,7 +52,7 @@
         "title" : "NUAT Reviewer",
         "description" : "Study tool for NUAT takers",
         "category" : "software",
-        "preview" : "../src/images/hero-image.svg",
+        "preview" : "",
         "url" : "https://github.com/ShaneMaglangit/NUATReviewer"
     },
     {
