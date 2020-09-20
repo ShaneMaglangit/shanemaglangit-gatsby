@@ -47,7 +47,7 @@ const Contact = () => {
                         <h1 className="text-6xl text-left text-white font-bold sm:text-3xl">
                             Send me a message
                         </h1>
-                        <form method="post" action="#">
+                        <form method="post" action="https://getform.io/f/57b2a2c7-99d0-4771-91e8-090a26eb3aee">
                             <input type="text" name="name" id="name" placeholder="Enter your name" className="w-full bg-light-dark text-sm text-white placeholder-white placeholder-opacity-25 p-4 mt-3 focus:outline-none"/>
                             <input type="email" name="email" id="email" placeholder="Enter your email" className="w-full bg-light-dark text-sm text-white placeholder-white placeholder-opacity-25 p-4 mt-3 focus:outline-none"/>
                             <textarea row="5" name="message" id="message" placeholder="Enter your message" className="w-full bg-light-dark text-sm text-white placeholder-white placeholder-opacity-25 p-4 mt-3 focus:outline-none"/>

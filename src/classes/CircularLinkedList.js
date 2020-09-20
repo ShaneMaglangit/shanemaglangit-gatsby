@@ -22,9 +22,9 @@ class CircularLinkedList {
         }
     }
 
-    addArray(dataArray) {
-      dataArray.forEach((data, _) => { this.add(data); });
-      return this;
+    addNodes(nodesArray) {
+        nodesArray.forEach ((data, _) => { this.add(data.node); });
+        return this;
     }
 
     get(index) {
