@@ -9,7 +9,7 @@ const Index = (props) => {
     <Layout>
       <main className="w-full flex-grow flex flex-col justify-around">
         {/* Layout for the header section / hero */}
-        <div id="header" className="w-11/12 mx-auto min-h-screen sm:flex sm:items-center">
+        <div id="header" className="w-11/12 mx-auto min-h-screen sm:flex sm:items-center py-16">
           <div className="sm:px-2">
             <div className="flex items-center w-100 px-4 mt-8 sm:mt-8">
               <span className="text-sm text-primary font-semibold pr-2">
@@ -30,7 +30,7 @@ const Index = (props) => {
 
         {/* Layout for the about section */}
         <div id="about" className="bg-darker min-h-screen">
-          <div className="w-11/12 mx-auto min-h-screen sm:flex sm:items-center">
+          <div className="w-11/12 mx-auto min-h-screen sm:flex sm:items-center py-16">
             <img
                 className="max-w-xl mt-16 mx-auto sm:w-1/2"
                 src={heroImage}
@@ -47,15 +47,15 @@ const Index = (props) => {
                 Based on the Philippines,<br />I am a student and a developer.
               </h1>
               <p className="px-4 pt-2 text-gray-400 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                I am currently 19 years old taking up a bachelors degree in Computer Science under National University Manila in the Philippines. Along with my studies, I currently focus on working on different software and web development side projects. I also work as a freelancer developer for the clients that I meet through freelancing sites and from contracts that I've made from some online communities for developers.
               </p>
             </div>
           </div>
         </div>
 
         {/* Layout for the portfolio section */}
-        <div id="project" className="w-11/12 mx-auto min-h-screen sm:flex sm:items-center">
-          <div className="w-11/12 mx-auto min-h-screen flex flex-col justify-center items-center">
+        <div id="project" className="w-11/12 mx-auto min-h-screen py-16">
+          <div className="w-11/12 mx-auto text-center">
             <span className="text-sm text-primary font-semibold pr-2">
               Projects
             </span>
@@ -67,22 +67,17 @@ const Index = (props) => {
         </div>
 
         {/* Layout for the testimonials section */}
-        <div id="testimonial" className="bg-darker min-h-screen w-full">
+        <div id="testimonial" className="bg-darker min-h-screen w-full py-16">
             <div className="w-11/12 mx-auto min-h-screen flex flex-col justify-center items-stretch">
                 <span className="text-sm text-center text-primary font-semibold pr-2">
-                Testimonials
+                  Testimonials
                 </span>
                 <h1 className="px-4 text-6xl text-center text-white font-bold sm:text-3xl">
-                Client Feedbacks
+                  Client Feedbacks
                 </h1>
                 <TestimonialSlider />
             </div>
         </div>
-
-        {/* Layour for the call to action section */}
-        {/* <div className="w-11/12 mx-auto min-h-half sm:flex sm:items-center">
-          <sub className="text-white">Call to Action Section</sub>
-        </div> */}
       </main>
     </Layout>
   )

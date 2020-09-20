@@ -13,6 +13,9 @@ module.exports = {
     "gatsby-plugin-smoothscroll",
     "gatsby-plugin-portal",
     "gatsby-plugin-react-helmet",
+    "gatsby-transformer-json",
+    "gatsby-transformer-sharp",
+    "gatsby-plugin-sharp",
     {
       resolve: "gatsby-plugin-manifest",
       options: {
@@ -30,5 +33,18 @@ module.exports = {
         postCssPlugins: [require("tailwindcss"), require("autoprefixer")],
       },
     },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "content",
+        path: "./content/",
+      },
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        path: "./src/images/",
+      },
+    }
   ],
 }
