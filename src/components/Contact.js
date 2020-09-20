@@ -3,8 +3,10 @@ import React from "react"
 const Contact = () => {
     return (
         <>
+Ad            {/* Main wrapper for the contact section */}
             <div id="contact" className="w-full flex-grow min-h-screen flex flex-col justify-around">
                 <div className="w-10/12 mx-auto flex content-start ">
+                    {/* Left section containing the social links */}
                     <div className="flex flex-col w-100 px-4 w-full md:w-1/2 mt-8 sm:mt-8">
                         <p className="text-sm text-primary font-semibold pr-2">
                             Get in touch
@@ -40,6 +42,7 @@ const Contact = () => {
                             </div>
                         </a>
                     </div>
+                    {/* Right section containing the contact form */}
                     <div className="flex flex-col  w-100 px-4 w-full md:w-1/2 mt-8 sm:mt-8">
                         <p className="text-sm text-primary font-semibold pr-2">
                             Talk with me
