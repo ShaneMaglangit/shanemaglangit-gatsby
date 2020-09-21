@@ -5,13 +5,13 @@ const Contact = () => {
         <>
             {/* Main wrapper for the contact section */}
             <div id="contact" className="w-full flex-grow xl:h-screen flex flex-col justify-around">
-                <div className="w-11/12 xl:w-10/12 mx-auto flex-wrap md:flex-no-wrap flex content-start py-10">
+                <div className="w-11/12 xl:w-10/12 mx-auto flex-wrap md:flex-no-wrap flex content-start py-12 md:py-16 xl:py-12">
                     {/* Left section containing the social links */}
                     <div className="flex flex-col w-100 px-4 w-full md:w-1/2">
                         <p className="text-sm text-primary font-semibold pr-2">
                             Get in touch
                         </p>
-                        <h1 className="text-2xl md:text-3xl text-left text-white font-bold">
+                        <h1 className="text-xl lg:text-3xl text-left text-white font-bold">
                             Reach me through
                         </h1>
                         <a href="https://www.facebook.com/ShaneDMaglangit/" target="_blank" rel="noreferrer" className="flex items-center my-4">
@@ -20,7 +20,7 @@ const Contact = () => {
                             </svg>
                             <div className="ml-2">
                                 <p className="text-xs text-white opacity-50">Facebook</p>
-                                <h4 className="text-md text-white font-medium">facebook.com/ShaneDMaglangit</h4>
+                                <h4 className="text-sm lg:text-base text-white font-medium">facebook.com/ShaneDMaglangit</h4>
                             </div>
                         </a>
                         <a href="https://www.linkedin.com/in/ShaneMaglangit/" target="_blank" rel="noreferrer"  className="flex items-center my-4">
@@ -29,7 +29,7 @@ const Contact = () => {
                             </svg>
                             <div className="ml-2">
                                 <p className="text-xs text-white opacity-50">LinkedIn</p>
-                                <h4 className="text-md text-white font-medium">linkedin.com/in/ShaneMaglangit</h4>
+                                <h4 className="text-sm lg:text-base text-white font-medium">linkedin.com/in/ShaneMaglangit</h4>
                             </div>
                         </a>
                         <a href="https://github.com/shanemaglangit" target="_blank" rel="noreferrer" className="flex items-center my-4">
@@ -38,7 +38,7 @@ const Contact = () => {
                             </svg>
                             <div className="ml-2">
                                 <p className="text-xs text-white opacity-50">GitHub</p>
-                                <h4 className="text-md text-white font-medium">github.com/ShaneMaglangit</h4>
+                                <h4 className="text-sm lg:text-base text-white font-medium">github.com/ShaneMaglangit</h4>
                             </div>
                         </a>
                     </div>
@@ -47,7 +47,7 @@ const Contact = () => {
                         <p className="text-sm text-primary font-semibold pr-2">
                             Talk with me
                         </p>
-                        <h1 className="text-2xl md:text-3xl text-left text-white font-bold">
+                        <h1 className="text-xl lg:text-3xl text-left text-white font-bold">
                             Send me a message
                         </h1>
                         <form method="post" action="***REMOVED***">

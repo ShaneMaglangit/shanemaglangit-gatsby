@@ -12,7 +12,7 @@ const Index = (props) => {
         {/* Layout for the header section / hero */}
         <div id="header" className="w-full h-screen md:h-screen-60 xl:h-screen flex flex-col items-center justify-center">
           <h1 className="px-3 text-3xl md:text-4xl xl:text-5xl text-center text-primary font-bold">
-            My name is Shane, <br /> 
+            My name is Shane Maglangit, <br /> 
             <span className="text-white">
               I design and build Software.
             </span>
@@ -25,7 +25,7 @@ const Index = (props) => {
             <picture className="h-full pt-8 xl:pt-16 mx-auto">
               <source srcset={portraitWebp} type="image/webp" />
               <source srcset={portraitPng} type="image/png" /> 
-              <img className="w-full h-full" src={portraitPng} alt="Portrait"></img>
+              <img className="w-full h-full" src={portraitPng} alt="Shane Maglangit Portrait"></img>
             </picture>
             <div className="px-2 md:px-4">
               <div className="flex items-center w-100 mt-8">
@@ -45,7 +45,7 @@ const Index = (props) => {
         </div>
 
         {/* Layout for the portfolio section */}
-        <div id="project" className="w-11/12 mx-auto flex flex-col items-center justify-center py-12 xl:py-auto xl:min-h-screen py-1">
+        <div id="project" className="w-11/12 mx-auto flex flex-col items-center justify-center py-12 md:py-16 lg:py-12 xl:py-auto xl:min-h-screen py-1">
           <div className="w-full flex flex-col items-center">
             <span className="text-sm text-primary font-semibold pr-2">
               Projects
@@ -58,7 +58,7 @@ const Index = (props) => {
         </div>
 
         {/* Layout for the testimonials section */}
-        <div id="testimonial" className="flex justify-center items-center bg-darker py-12 xl:py-auto  xl:min-h-screen w-full">
+        <div id="testimonial" className="flex justify-center items-center bg-darker py-12 md:py-16 lg:py-12 xl:py-auto  xl:min-h-screen w-full">
             <div className="w-full md:w-11/12 flex flex-col justify-center items-stretch py-1">
                 <span className="text-sm text-center text-primary font-semibold pr-2">
                   Testimonials
