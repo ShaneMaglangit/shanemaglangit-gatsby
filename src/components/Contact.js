@@ -4,14 +4,14 @@ const Contact = () => {
     return (
         <>
             {/* Main wrapper for the contact section */}
-            <div id="contact" className="w-full flex-grow min-h-screen flex flex-col justify-around">
-                <div className="w-10/12 mx-auto flex content-start ">
+            <div id="contact" className="w-full flex-grow xl:h-screen flex flex-col justify-around">
+                <div className="w-11/12 xl:w-10/12 mx-auto flex-wrap md:flex-no-wrap flex content-start py-10">
                     {/* Left section containing the social links */}
-                    <div className="flex flex-col w-100 px-4 w-full md:w-1/2 mt-8 sm:mt-8">
+                    <div className="flex flex-col w-100 px-4 w-full md:w-1/2">
                         <p className="text-sm text-primary font-semibold pr-2">
                             Get in touch
                         </p>
-                        <h1 className="text-3xl text-left text-white font-bold">
+                        <h1 className="text-2xl md:text-3xl text-left text-white font-bold">
                             Reach me through
                         </h1>
                         <a href="https://www.facebook.com/ShaneDMaglangit/" target="_blank" rel="noreferrer" className="flex items-center my-4">
@@ -43,11 +43,11 @@ const Contact = () => {
                         </a>
                     </div>
                     {/* Right section containing the contact form */}
-                    <div className="flex flex-col  w-100 px-4 w-full md:w-1/2 mt-8 sm:mt-8">
+                    <div className="flex flex-col mt-10 md:mt-0 w-100 px-4 w-full md:w-1/2">
                         <p className="text-sm text-primary font-semibold pr-2">
                             Talk with me
                         </p>
-                        <h1 className="text-3xl text-left text-white font-bold">
+                        <h1 className="text-2xl md:text-3xl text-left text-white font-bold">
                             Send me a message
                         </h1>
                         <form method="post" action="https://getform.io/f/57b2a2c7-99d0-4771-91e8-090a26eb3aee">
