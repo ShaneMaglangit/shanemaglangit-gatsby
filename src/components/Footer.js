@@ -18,7 +18,7 @@ const Footer = () => {
                 <a href="https://www.aedin.com/in/shanemaglangit/" target="_blank" rel="noreferrer" className="px-2 text-primary">Facebook</a>
             </div>
             <h3 className="text-lg text-white font-semibold my-2">Walking towards my goal one step at a time</h3>
-            Handcrafter by me &copy; 2020
+            Handcrafted by me &copy; 2020
         </footer>
     </>
   )
