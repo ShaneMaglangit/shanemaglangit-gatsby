@@ -1,5 +1,5 @@
-import { a } from "gatsby"
 import React from "react"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 const Footer = () => {
   return (
@@ -13,9 +13,9 @@ const Footer = () => {
                 </svg>
             </div>
             <div className="py-4">
-                <a href="https://github.com/shanemaglangit" target="_blank" rel="noreferrer" className="px-2 text-primary">GitHub</a>
-                <a href="https://www.facebook.com/Scoobidiboopao" target="_blank" rel="noreferrer" className="px-2 text-primary">LinkedIn</a>
-                <a href="https://www.aedin.com/in/shanemaglangit/" target="_blank" rel="noreferrer" className="px-2 text-primary">Facebook</a>
+                <OutboundLink href="https://github.com/shanemaglangit" target="_blank" rel="noreferrer" className="px-2 text-primary">GitHub</OutboundLink>
+                <OutboundLink href="https://www.facebook.com/ShaneDMaglangit" target="_blank" rel="noreferrer" className="px-2 text-primary">LinkedIn</OutboundLink>
+                <OutboundLink href="https://www.aedin.com/in/shanemaglangit/" target="_blank" rel="noreferrer" className="px-2 text-primary">Facebook</OutboundLink>
             </div>
             <h3 className="text-base md:text-lg text-white font-semibold my-2">Walking towards my goal one step at a time</h3>
             Handcrafted by me &copy; 2020

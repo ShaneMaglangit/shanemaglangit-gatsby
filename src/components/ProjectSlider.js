@@ -4,6 +4,7 @@ import { graphql, StaticQuery } from "gatsby"
 import "slick-carousel/slick/slick.css"
 import "slick-carousel/slick/slick-theme.css"
 import BackgroundImage from 'gatsby-background-image'
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 // Queries the data and render the project slider
 export default function ProjectSlider(props) { 
@@ -74,7 +75,7 @@ const ProjectPreviewOverlay = ({data}) => {
 const ProjectPreviewItem = ({data}) => {
     return (
         <div className="px-3 h-screen-30 xl:h-screen-60 w-screen-85 md:w-screen-65">
-            <a href={data.node.url} target="_blank" rel="noreferrer" className="w-full focus:outline-none">
+            <OutboundLink href={data.node.url} target="_blank" rel="noreferrer" className="w-full focus:outline-none">
                 {/* Create a BackgroundImage element if the preview provided is in an image format */}
                 { data.node.preview !== null && data.node.preview.childImageSharp !== null &&
                     <BackgroundImage 
@@ -102,7 +103,7 @@ const ProjectPreviewItem = ({data}) => {
                         <ProjectPreviewOverlay data={data.node}/>
                     </div>
                 }
-            </a>
+            </OutboundLink>
         </div>
     )
 }
