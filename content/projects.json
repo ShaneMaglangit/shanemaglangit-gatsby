@@ -50,14 +50,14 @@
     },
     {
         "title" : "NUAT Reviewer",
-        "description" : "Study tool for NUAT takers",
+        "description" : "Study tool application made for NUAT takers",
         "category" : "software",
         "preview" : "",
         "url" : "https://github.com/ShaneMaglangit/NUATReviewer"
     },
     {
         "title" : "2020: Break Reminder",
-        "description" : "Break reminder app based on the 20-20-20 rule",
+        "description" : "Break reminder application based on the 20-20-20 rule",
         "category" : "software",
         "preview" : "",
         "url" : "https://github.com/shanemaglangit/2020"
@@ -78,42 +78,42 @@
     },
     {
         "title" : "Pathfinding Visualizer",
-        "description" : "Visualizer for pathfinding algorithms",
+        "description" : "Visualizer for various pathfinding algorithms on a unweighted and weighted grid",
         "category" : "software",
         "preview" : "",
         "url" : "https://github.com/ShaneMaglangit/PathfindingVisualizer"
     },
     {
-        "title" : "Softing Visualizer",
-        "description" : "Visualizer for sorting algorithms",
+        "title" : "Sorting Visualizer",
+        "description" : "Visualizer for various sorting algorithms",
         "category" : "software",
         "preview" : "",
         "url" : "https://github.com/ShaneMaglangit/SortingVisualizer"
     },
     {
         "title" : "Dots and Boxes",
-        "description" : "Game-based on the dots and boxes pen-and-paper game",
+        "description" : "Mobile game based off the classic pen-and-paper game called dots and boxes",
         "category" : "software",
         "preview" : "",
         "url" : "https://github.com/ShaneMaglangit/Dots-And-Boxes"
     },
     {
         "title" : "ShareTask",
-        "description" : "Todo app with group sharing and syncing feature",
+        "description" : "Todo list mobile app with group sharing and syncing feature",
         "category" : "software",
         "preview" : "",
         "url" : "https://github.com/ShaneMaglangit/Share-Task"
     },
     {
         "title" : "Flashcards",
-        "description" : "Flashcards-based language learning tool",
+        "description" : "Flashcards inspired mobile application for studying words",
         "category" : "software",
         "preview" : "",
         "url" : ""
     },
     {
         "title" : "Hippo",
-        "description" : "Inventory management and monitoring Tool",
+        "description" : "Inventory management and monitoring tool",
         "category" : "software",
         "preview" : "",
         "url" : ""
@@ -127,7 +127,7 @@
     },
     {
         "title" : "WakeMeUp",
-        "description" : "App for generating multiple alarms by intervals",
+        "description" : "Mobile application for generating multiple alarms with a set interval",
         "category" : "software",
         "preview" : "",
         "url" : "https://github.com/ShaneMaglangit/WakeMeUp"
@@ -141,14 +141,14 @@
     },
     {
         "title" : "VB.Net Calculator",
-        "description" : "Simple Calculator with Fancy Animation",
+        "description" : "Basic arithmethic calculator with fancy animation",
         "category" : "software",
         "preview" : "",
         "url" : "https://github.com/ShaneMaglangit/VB.NET-Calculator"
     },
     {
         "title" : "Typing Maniac",
-        "description" : "A typing game",
+        "description" : "A typing game built on JVM",
         "category" : "software",
         "preview" : "",
         "url" : "https://github.com/ShaneMaglangit/TypingManiac"
