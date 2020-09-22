@@ -63,9 +63,9 @@ const ProjectPreviewOverlay = ({data}) => {
     return(
         <>
             {/* An overlay for the project previous containing the project title and description */}
-            <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-transparent-dark">
-                <h3 className="text-shadow text-xl text-primary font-bold">{data.title}</h3>
-                <p className="text-shadow text-white text-sm">{data.description}</p>
+            <div className="absolute top-0 left-0 w-full h-full flex flex-col items-center justify-center bg-transparent-dark p-6">
+                <h3 className="text-shadow text-center text-xl text-primary font-bold">{data.title}</h3>
+                <p className="text-shadow text-center text-white text-sm">{data.description}</p>
             </div>
         </>
     )
@@ -73,7 +73,7 @@ const ProjectPreviewOverlay = ({data}) => {
 
 const ProjectPreviewItem = ({data}) => {
     return (
-        <div className="px-3 h-screen-60" style={{ width: 700 }}>
+        <div className="px-3 h-screen-30 xl:h-screen-60 w-screen-85 md:w-screen-65">
             <a href={data.node.url} target="_blank" rel="noreferrer" className="w-full focus:outline-none">
                 {/* Create a BackgroundImage element if the preview provided is in an image format */}
                 { data.node.preview !== null && data.node.preview.childImageSharp !== null &&
@@ -130,20 +130,20 @@ class ProjectSliderLayout extends React.Component {
             swipeToSlide: true,
             speed: 500,
             variableWidth: true,
-            adaptiveHeight: true   
+            adaptiveHeight: true
         };
 
         return (
             <>
                 {/* Upper section */}
-                <div>
-                    <button onClick={() => this.setState({ project: this.props.data.software, selected: "software"})} className={`${ this.state.selected === "software" ? `bg-primary` : `bg-none`} transition duration-500 ease-in-out border-2 border-primary text-sm text-white font-semibold py-2 px-4 my-2 mx-2 focus:outline-none`}>
+                <div className="flex">
+                    <button onClick={() => this.setState({ project: this.props.data.software, selected: "software"})} className={`${ this.state.selected === "software" ? `bg-primary` : `bg-none`} transition duration-500 ease-in-out border-2 border-primary text-xs sm:text-sm text-white font-semibold py-2 px-4 my-2 mx-2 focus:outline-none`}>
                         Software Projects
                     </button>
-                    <button onClick={() => this.setState({ project: this.props.data.website, selected: "website" })} className={`${ this.state.selected !== "software" ? `bg-primary` : `bg-none`} transition duration-500 ease-in-out border-2 border-primary text-sm text-white font-semibold py-2 px-4 my-2 mx-2 focus:outline-none`}>Website Projects</button>
+                    <button onClick={() => this.setState({ project: this.props.data.website, selected: "website" })} className={`${ this.state.selected !== "software" ? `bg-primary` : `bg-none`} transition duration-500 ease-in-out border-2 border-primary text-xs sm:text-sm text-white font-semibold py-2 px-4 my-2 mx-2 focus:outline-none`}>Website Projects</button>
                 </div>
                 {/* Software carousel section wrapper */}
-                <div className={`${ this.state.selected === "software" ? `block` : `hidden`} w-full mt-4`}>
+                <div className={`${ this.state.selected === "software" ? `block` : `hidden`} w-full md:w-full mt-4 px-4 md:px-0`}>
                     {/* Creates a react-slick slider */}
                     <Slider {...settings}>
                         {/* Iterates through the software projects and create elements for each of it */}
@@ -151,7 +151,7 @@ class ProjectSliderLayout extends React.Component {
                     </Slider>
                 </div>
                 {/* Website carousel section wrapper */}
-                <div className={`${ this.state.selected === "website" ? `block` : `hidden left-screen-width top-0 transition duration-500 ease-in-out`} w-full mt-4`}>
+                <div className={`${ this.state.selected === "website" ? `block` : `hidden left-screen-width top-0 transition duration-500 ease-in-out`} w-full mt-4 px-4 md:px-0`}>
                     {/* Creates a react-slick slider */}
                     <Slider {...settings}>
                         {/* Iterates through the website projects and create elements for each of it */}

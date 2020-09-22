@@ -4,7 +4,7 @@ import React from "react"
 const Footer = () => {
   return (
     <>
-        <footer className="py-4 text-center bg-darker text-gray-600 text-xs">
+        <footer className="p-4 text-center bg-darker text-gray-600 text-xs">
             {/* Site logo */}
             <div className="mx-auto flex items-center flex-shrink-0 justify-center text-white">
                 <svg className="fill-current text-primary" width="54" height="54" viewBox="0 0 130.915 66.438" xmlns="http://www.w3.org/2000/svg">
@@ -17,7 +17,7 @@ const Footer = () => {
                 <a href="https://www.facebook.com/Scoobidiboopao" target="_blank" rel="noreferrer" className="px-2 text-primary">LinkedIn</a>
                 <a href="https://www.aedin.com/in/shanemaglangit/" target="_blank" rel="noreferrer" className="px-2 text-primary">Facebook</a>
             </div>
-            <h3 className="text-lg text-white font-semibold my-2">Walking towards my goal one step at a time</h3>
+            <h3 className="text-base md:text-lg text-white font-semibold my-2">Walking towards my goal one step at a time</h3>
             Handcrafted by me &copy; 2020
         </footer>
     </>
