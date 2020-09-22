@@ -66,9 +66,7 @@ module.exports = {
         // The property ID; the tracking code won't be generated without it
         trackingId: "***REMOVED***",
         // Defines where to place the tracking script - `true` in the head and `false` in the body
-        head: false,
-        // Defers execution of google analytics script after page load
-        defer: true,
+        head: false
       }
     },
   ],
