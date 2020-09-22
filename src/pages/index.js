@@ -12,7 +12,7 @@ const Index = (props) => {
         {/* Layout for the header section / hero */}
         <div id="header" className="w-full h-screen md:h-screen-60 xl:h-screen flex flex-col items-center justify-center">
           <h1 className="px-3 text-3xl md:text-4xl xl:text-5xl text-center text-primary font-bold">
-            I'm Shane Maglangit, <br /> 
+              I'm Shane Maglangit, <br /> 
             <span className="text-white">
               I design and build Software.
             </span>
