@@ -1,14 +1,18 @@
 import React from "react"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 
-const Contact = () => {
+const Contact = ({ contactVisible, hideContact }) => {
     return (
         <>
             {/* Main wrapper for the contact section */}
-            <div id="contact" className="w-full flex-grow xl:h-screen flex flex-col justify-around">
-                <div className="w-11/12 xl:w-10/12 mx-auto flex-wrap md:flex-no-wrap flex content-start py-12 md:py-16 xl:py-12">
+            <div id="contact" className={`${ contactVisible ? "translate-y-0" : "-translate-y-full"} transform flex fixed h-full bg-dark z-50 w-full flex-grow flex-col justify-around transition duration-500 ease-in-out`}>
+                <svg onClick={() => hideContact()} className="fill-current text-white absolute top-0 right-0 m-4 cursor-pointer" xmlns="http://www.w3.org/2000/svg" height="32" width="32" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+                </svg>
+                <div className="w-11/12 md:w-9/12 lg:w-11/12 xl:w-10/12 mx-auto flex-wrap h-full lg:h-auto flex flex-col-reverse content-start lg:flex-row md:flex-no-wrap pt-12 md:py-16 xl:py-12">
                     {/* Left section containing the social links */}
-                    <div className="flex flex-col w-100 px-4 w-full md:w-1/2">
+                    <div className="justify-start lg:justify-start flex flex-col flex-1 lg:flex-none px-4 pt-8 lg:py-0 w-full lg:w-1/2">
                         <p className="text-sm text-primary font-semibold pr-2">
                             Get in touch
                         </p>
@@ -44,7 +48,7 @@ const Contact = () => {
                         </OutboundLink >
                     </div>
                     {/* Right section containing the contact form */}
-                    <div className="flex flex-col mt-10 md:mt-0 w-100 px-4 w-full md:w-1/2">
+                    <div className="justify-end lg:justify-start flex flex-col flex-1 lg:flex-none px-4 pb-8 lg:py-0 w-full lg:w-1/2">
                         <p className="text-sm text-primary font-semibold pr-2">
                             Talk with me
                         </p>
