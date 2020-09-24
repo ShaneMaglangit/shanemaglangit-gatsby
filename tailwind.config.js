@@ -25,6 +25,9 @@ module.exports = {
       body: ["Poppins", "sans-serif"]
     },
     extend: {
+      zIndex: {
+        "back" : "-1"
+      },
       width: {
         "screen-60" : "60vw",
         "screen-65" : "65vw",
@@ -49,7 +52,8 @@ module.exports = {
         "dark" : "#222222",
         "darker" : "#1F1F1F",
         "primary" : "#F26C4F",
-        "primary-lighT" : "#F26C4F"
+        "primary-light" : "#F26C4F",
+        "accent" : "#00FFBB"
       },
       inset: {
         "screen-width" : "100vw"
