@@ -14,13 +14,6 @@
         "url" : "https://www.my-wordz.com/"
     },
     {
-        "title" : "Density Design Company",
-        "description" : "Web Design and Development Agency",
-        "category" : "website",
-        "preview" : "../src/images/densitydesigncompany.png",
-        "url" : "https://densitydesigncompany.com/"
-    },
-    {
         "title" : "Pieces of a Soul",
         "description" : "Yoga and Meditation Blog Site",
         "category" : "website",
@@ -33,13 +26,6 @@
         "category" : "website",
         "preview" : "../src/images/resumedeepdive.png",
         "url" : "https://www.resumedeepdive.com/"
-    },
-    {
-        "title" : "Dibaa",
-        "description" : "E-Commerce Store for Herbal Teas",
-        "category" : "website",
-        "preview" : "../src/images/dibaa.png",
-        "url" : "https://www.dibaa.nl/"
     },
     {
         "title" : "Abel Air Conditiong",
