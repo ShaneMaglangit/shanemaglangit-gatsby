@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React, {useState} from "react"
 import NavbarItems from "./NavbarItems"
 
-function Navbar () {
+function Navbar ({ showContact }) {
     const [isExpanded, toggleExpansion] = useState(false)
     return (
         <>
@@ -27,7 +27,7 @@ function Navbar () {
                 </div>
                 {/* Wrapper for the navigation items */}
                 <div id="menu-items" className={`${ isExpanded ? `block` : `hidden`} w-full flex-grow md:flex md:items-center md:w-auto md:block`}>
-                    <NavbarItems />
+                    <NavbarItems showContact={showContact} />
                 </div>
             </nav>
         </>

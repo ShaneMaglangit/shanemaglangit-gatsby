@@ -72,3 +72,7 @@ yarn-error.log
 .vscode/
 # Local Netlify folder
 .netlify
+
+# BFG Repo Cleaner
+bfg.jar
+filter.txt
