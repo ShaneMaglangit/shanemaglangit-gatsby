@@ -20,7 +20,7 @@ const Index = (props) => {
         </div>
 
         {/* Layout for the about section */}
-        <div id="about" className="bg-darker xl:min-h-screen">
+        <div id="about" className="bg-darker min-h-screen md:min-h-auto lg:min-h-screen">
           <div className="w-11/12 mx-auto h-full flex flex-col pb-10 md:pb-0 md:flex-row items-center">
             <picture className="h-full pt-8 xl:pt-16 mx-auto">
               <source srcSet={portraitWebp} type="image/webp" />
