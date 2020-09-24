@@ -41,7 +41,7 @@ const TestimonialSliderLayout = ({ data }) => {
                 {/* Left button section for selecting previous testimonial */}
                 <div className="w-6/12 lg:w-3/12 flex items-end justify-start lg:justify-end mt-4 focus:outline-none order-2 lg:order-1">
                     <div className="flex items-center mx-3">
-                        <svg className="h-8 w-8 mr-2" width="54" height="54" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.495 24.829"><path d="M3.667,0,0,3.667,7.333,11,0,18.333,3.667,22l11-11Z" transform="translate(16.081 23.414) rotate(180)" fill="none" stroke="#F26C4F" stroke-miterlimit="10" stroke-width="2"/></svg>
+                        <svg className="h-8 w-8 mr-2" width="54" height="54" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.495 24.829"><path d="M3.667,0,0,3.667,7.333,11,0,18.333,3.667,22l11-11Z" transform="translate(16.081 23.414) rotate(180)" fill="none" stroke="#F26C4F" strokeMiterlimit="10" strokeWidth="2"/></svg>
                         {/* Set the current testimonial to the previous node on buton click */}
                         <button onClick={() => setTestimonial(testimonial.prev)} className="text-right focus:outline-none">
                             <p className="text-left md:text-right text-xs font-thin text-white opacity-50">{testimonial.prev.data.company}</p>

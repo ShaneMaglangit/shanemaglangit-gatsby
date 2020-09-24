@@ -10,7 +10,7 @@ const Index = (props) => {
     <Layout>
       <main className="w-full flex-grow flex flex-col justify-around">
         {/* Layout for the header section / hero */}
-        <div id="header" className="w-full h-screen md:h-screen-60 xl:h-screen flex flex-col items-center justify-center">
+        <div id="header" className="w-full h-screen flex flex-col items-center justify-center">
           <h1 className="px-3 text-3xl md:text-4xl xl:text-5xl text-center text-primary font-bold">
               I'm Shane Maglangit, <br /> 
             <span className="text-white">
@@ -23,8 +23,8 @@ const Index = (props) => {
         <div id="about" className="bg-darker xl:min-h-screen">
           <div className="w-11/12 mx-auto h-full flex flex-col pb-10 md:pb-0 md:flex-row items-center">
             <picture className="h-full pt-8 xl:pt-16 mx-auto">
-              <source srcset={portraitWebp} type="image/webp" />
-              <source srcset={portraitPng} type="image/png" /> 
+              <source srcSet={portraitWebp} type="image/webp" />
+              <source srcSet={portraitPng} type="image/png" /> 
               <img className="w-full h-full" src={portraitPng} alt="Shane Maglangit Portrait"></img>
             </picture>
             <div className="px-2 md:px-4">
@@ -50,7 +50,7 @@ const Index = (props) => {
             <span className="text-sm text-primary font-semibold pr-2">
               Projects
             </span>
-            <h1 className="px-4 text-2xl md:text-3xl text-center text-white font-bold">
+            <h1 className="px-4 pt-2 text-2xl md:text-3xl text-center text-white font-bold">
               Previous Projects
             </h1>
             <ProjectSlider />
@@ -63,7 +63,7 @@ const Index = (props) => {
                 <span className="text-sm text-center text-primary font-semibold pr-2">
                   Testimonials
                 </span>
-                <h1 className="px-4 text-2xl md:text-3xl text-center text-white font-bold">
+                <h1 className="px-4 pt-2 text-2xl md:text-3xl text-center text-white font-bold">
                   Client Feedbacks
                 </h1>
                 <TestimonialSlider />
