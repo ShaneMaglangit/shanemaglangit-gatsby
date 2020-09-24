@@ -21,7 +21,7 @@ const Index = (props) => {
 
         {/* Layout for the about section */}
         <div id="about" className="bg-darker xl:min-h-screen">
-          <div className="w-11/12 mx-auto h-full flex flex-col pb-10 md:pb-0 md:flex-row items-center">
+          <div className="w-11/12 mx-auto h-full flex flex-col py-20 md:py-0 md:flex-row items-center">
             <picture className="h-full pt-8 xl:pt-16 mx-auto">
               <source srcSet={portraitWebp} type="image/webp" />
               <source srcSet={portraitPng} type="image/png" /> 
@@ -45,7 +45,7 @@ const Index = (props) => {
         </div>
 
         {/* Layout for the portfolio section */}
-        <div id="project" className="w-11/12 mx-auto flex flex-col items-center justify-center py-12 md:py-16 lg:py-12 xl:py-auto xl:min-h-screen py-1">
+        <div id="project" className="w-11/12 mx-auto flex flex-col items-center justify-center py-20 xl:py-auto xl:min-h-screen">
           <div className="w-full flex flex-col items-center">
             <span className="text-sm text-primary font-semibold pr-2">
               Projects
@@ -58,7 +58,7 @@ const Index = (props) => {
         </div>
 
         {/* Layout for the testimonials section */}
-        <div id="testimonial" className="flex justify-center items-center bg-darker py-12 md:py-16 lg:py-12 xl:py-auto  xl:min-h-screen w-full">
+        <div id="testimonial" className="flex justify-center items-center bg-darker py-20 xl:py-auto  xl:min-h-screen w-full">
             <div className="w-full md:w-11/12 flex flex-col justify-center items-stretch py-1">
                 <span className="text-sm text-center text-primary font-semibold pr-2">
                   Testimonials
