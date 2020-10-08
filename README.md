@@ -1,8 +1,8 @@
-## Live site
+## Live site :rocket:
 
 The live site can be found [here](https://www.shanemaglangit.com/)
 
-## Rebuild locally
+## Rebuild locally :hammer:
 
 1. **Install Gatsby CLI**
 
