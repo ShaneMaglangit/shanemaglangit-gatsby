@@ -35,6 +35,13 @@
         "url" : "http://abelairconditioning.com.au/"
     },
     {
+        "title" : "Job Journal",
+        "description" : "A journal for keeping track of job applications.",
+        "category" : "software",
+        "preview" : "../src/images/job-journal.png",
+        "url" : "https://github.com/ShaneMaglangit/Job-Journal"
+    },
+    {
         "title" : "NUAT Reviewer",
         "description" : "Study tool application made for NUAT takers",
         "category" : "software",
