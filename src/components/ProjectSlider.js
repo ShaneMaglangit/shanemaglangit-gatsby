@@ -73,7 +73,7 @@ const ProjectPreviewOverlay = ({data}) => {
 
 const ProjectPreviewItem = ({data}) => {
     return (
-        <div className="px-3 h-screen-30 xl:h-screen-60 w-screen-85 md:w-screen-65">
+        <div className="px-3 h-screen-30 xl:h-screen-60 ">
             <a href={data.node.url} target="_blank" rel="noreferrer" className="w-full focus:outline-none">
                 {/* Create a BackgroundImage element if the preview provided is in an image format */}
                 { data.node.preview !== null && data.node.preview.childImageSharp !== null &&
@@ -125,11 +125,9 @@ class ProjectSliderLayout extends React.Component {
             className: "center",
             centerMode: true,
             infinite: true,
-            centerPadding: "60px",
             slidesToShow: 1,
             swipeToSlide: true,
             speed: 500,
-            variableWidth: true,
             adaptiveHeight: true
         };
 

@@ -13,9 +13,9 @@ const CallToAction = ({ showContact }) => {
                     </h1>
                     <button onClick={() => showContact()} className="relative transition duration-500 ease-in-out transform hover:scale-105 font-semibold rounded-full bg-primary text-white py-3 px-6 focus:outline-none">
                     CONTACT ME
-                        <span class="absolute top-0 right-0 flex h-3 w-3">
-                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
-                            <span class="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
+                        <span className="absolute top-0 right-0 flex h-3 w-3">
+                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-accent opacity-75"></span>
+                            <span className="relative inline-flex rounded-full h-3 w-3 bg-accent"></span>
                         </span>
                     </button>
                 </div>

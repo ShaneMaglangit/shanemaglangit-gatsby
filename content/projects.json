@@ -14,13 +14,6 @@
         "url" : "https://www.my-wordz.com/"
     },
     {
-        "title" : "Density Design Company",
-        "description" : "Web Design and Development Agency",
-        "category" : "website",
-        "preview" : "../src/images/densitydesigncompany.png",
-        "url" : "https://densitydesigncompany.com/"
-    },
-    {
         "title" : "Pieces of a Soul",
         "description" : "Yoga and Meditation Blog Site",
         "category" : "website",
@@ -35,18 +28,18 @@
         "url" : "https://www.resumedeepdive.com/"
     },
     {
-        "title" : "Dibaa",
-        "description" : "E-Commerce Store for Herbal Teas",
-        "category" : "website",
-        "preview" : "../src/images/dibaa.png",
-        "url" : "https://www.dibaa.nl/"
-    },
-    {
         "title" : "Abel Air Conditiong",
         "description" : "Air Conditiong Hire and Services",
         "category" : "website",
         "preview" : "../src/images/abelairconditioning.png",
         "url" : "http://abelairconditioning.com.au/"
+    },
+    {
+        "title" : "Job Journal",
+        "description" : "A journal for keeping track of job applications.",
+        "category" : "software",
+        "preview" : "../src/images/job-journal.png",
+        "url" : "https://github.com/ShaneMaglangit/Job-Journal"
     },
     {
         "title" : "NUAT Reviewer",
