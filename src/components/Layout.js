@@ -5,6 +5,7 @@ import Footer from "./Footer"
 import Contact from "./Contact"
 import CallToAction from "./CallToAction"
 
+
 const Layout = ({ children }) => {
   const[contactVisible, setContactVisibility] = useState(false)
 
@@ -24,8 +25,8 @@ const Layout = ({ children }) => {
       <div className="flex flex-col bg-dark font-body focus:outline-none">
         <Navbar showContact={showContact} />
         {childrenWithProps}
-        <Contact contactVisible={contactVisible} hideContact={hideContact} />
         <CallToAction showContact={showContact} />
+        <Contact contactVisible={contactVisible} hideContact={hideContact} />
         <Footer />
       </div>
     </>
