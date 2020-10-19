@@ -7,7 +7,7 @@ module.exports = {
   siteMetadata: {
     title: "Shane Maglangit | Software Developer",
     author: "Shane Maglangit",
-    description: "I am Shane Francis Maglangit, a software developer that is based on the Philippines.",
+    description: "I am Shane Francis Maglangit, a software developer that is based on the Philippines."
   },
   plugins: [
     "gatsby-plugin-smoothscroll",
