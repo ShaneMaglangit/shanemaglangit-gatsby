@@ -5,8 +5,8 @@ import Footer from "./Footer"
 import Contact from "./Contact"
 import CallToAction from "./CallToAction"
 
-const Layout = ({ children }) => {
-  const[contactVisible, setContactVisibility] = useState(false)
+const Layout = ({ location, children }) => {
+  const[contactVisible, setContactVisibility] = useState(false);
 
   function showContact() {
     setContactVisibility(true);
@@ -22,10 +22,10 @@ const Layout = ({ children }) => {
     <>
       <SEO />
       <div className="flex flex-col bg-dark font-body focus:outline-none">
-        <Navbar showContact={showContact} />
+        <Navbar location={location} showContact={showContact} />
         {childrenWithProps}
-        <Contact contactVisible={contactVisible} hideContact={hideContact} />
         <CallToAction showContact={showContact} />
+        <Contact contactVisible={contactVisible} hideContact={hideContact} />
         <Footer />
       </div>
     </>
