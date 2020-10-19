@@ -154,7 +154,6 @@ const Index = (props) => {
                 <span className="text-sm text-primary font-semibold pr-2">
                   About me
                 </span>
-                <div className="bg-primary h-1 w-1/6"></div>
               </div>
               <h2 className="text-xl xl:text-3xl text-left text-white font-bold">
                 Based on the Philippines,<br />I am a student and a developer.
