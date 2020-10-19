@@ -1,4 +1,5 @@
 import React from "react"
+import { OutboundLink } from "gatsby-plugin-google-analytics"
 
 // Queries the data and render the project slider
 const ProjectList = ({data}) => { 
@@ -10,6 +11,11 @@ const ProjectList = ({data}) => {
                         <div className="w-full h-40 p-6 flex-grow bg-light-dark">
                             <h1 className="text-base text-primary font-semibold">{edges.node.title}</h1>
                             <h2 className="text-sm text-white mt-2">{edges.node.description}</h2>
+                            <OutboundLink href={edges.node.source} target="_blank" rel="noreferrer">
+                                <button className="text-accent text-sm mt-2 focus:outline-none">
+                                    Source
+                                </button>
+                            </OutboundLink>
                         </div>
                     </div>
                 )
