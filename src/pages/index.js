@@ -185,19 +185,6 @@ const Index = (props) => {
             </div>
           </div>
 
-          {/* Layout for the portfolio section */}
-          <div id="project" className="w-11/12 mx-auto flex flex-col items-center justify-center py-20 xl:py-auto xl:min-h-screen">
-            <div className="container w-full flex flex-col items-center">
-              <span className="text-sm text-primary font-semibold pr-2">
-                Projects
-              </span>
-              <h1 className="px-4 pt-2 text-2xl md:text-3xl text-center text-white font-bold">
-                Previous Projects
-              </h1>
-              <ProjectSlider />
-            </div>
-          </div>
-
           {/* Layout for the testimonials section */}
           <div id="testimonial" className="flex justify-center items-center bg-darker py-20 xl:py-auto  min-h-screen md:min-h-0 xl:min-h-screen w-full">
               <div className="container w-full md:w-11/12 flex flex-col justify-center items-stretch py-1">

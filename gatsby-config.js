@@ -57,7 +57,8 @@ module.exports = {
       options: {
         path: "./src/images/",
       },
-    },{
+    },
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         // The property ID; the tracking code won't be generated without it
@@ -66,5 +67,28 @@ module.exports = {
         head: false
       }
     },
+    {
+      resolve: `gatsby-source-mysql`,
+      options: {
+        connectionDetails: {
+          host: 'localhost',
+          user: 'root',
+          password: '',
+          database: 'gatsby-shanemaglangit'
+        },
+        queries: [
+          {
+            statement: "SELECT * FROM projects WHERE category='software'",
+            idFieldName: "id",
+            name: "softwareProjects"
+          },
+          {
+            statement: "SELECT * FROM projects WHERE category='website'",
+            idFieldName: "id",
+            name: "websiteProjects"
+          }
+        ]
+      }
+    }
   ],
 }
