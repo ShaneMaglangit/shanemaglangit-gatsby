@@ -2,12 +2,12 @@ import { Link } from "gatsby"
 import React, {useState} from "react"
 import NavbarItems from "./NavbarItems"
 
-const Navbar = ({ showContact }) => {
+const Navbar = ({ location, showContact }) => {
     const [isExpanded, toggleExpansion] = useState(false)
     return (
         <>
             {/* Wrapper for the navigation bar */}
-            <div className={`${ isExpanded ? `relative shadow-md` : `absolute`} w-full z-50`}>
+            <div className={`${ isExpanded ? `relative shadow-md` : location.pathname == "/" ? `absolute` : `relative`} w-full z-50`}>
                 <nav className="container mx-auto flex flex-wrap items-center justify-between w-full p-6">
                     {/* Site logo */}
                     <Link to="/" className="flex items-center flex-shrink-0 text-white mr-6">

@@ -10,7 +10,7 @@ import scrollTo from "gatsby-plugin-smoothscroll"
 
 const Index = (props) => {
   return (
-    <Layout>
+    <Layout location={props.location}>
       <main className="w-full  flex-grow flex flex-col justify-around">
           {/* Layout for the header section / hero */}
           <div id="header" className="relative w-full h-screen flex flex-col items-center justify-center">
