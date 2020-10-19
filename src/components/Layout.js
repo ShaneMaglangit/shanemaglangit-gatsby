@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
   return (
     <>
       <SEO />
-      <div className="container flex flex-col bg-dark font-body focus:outline-none">
+      <div className="flex flex-col bg-dark font-body focus:outline-none">
         <Navbar showContact={showContact} />
         {childrenWithProps}
         <Contact contactVisible={contactVisible} hideContact={hideContact} />
