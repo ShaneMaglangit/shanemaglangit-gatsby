@@ -4,7 +4,7 @@ const CallToAction = ({ showContact }) => {
     return (
         <>
             <div className="w-full mx-auto flex flex-col items-center justify-center py-20">
-                <div className="w-full flex flex-col items-center">
+                <div className="container w-full flex flex-col items-center">
                     <span className="text-sm text-primary font-semibold pr-2">
                     Collaborate
                     </span>

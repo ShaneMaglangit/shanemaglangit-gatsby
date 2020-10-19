@@ -27,11 +27,11 @@ const Index = (props) => {
             </svg>
           </button>
 
-          <Particles className="z-10 absolute top-0 left-0 w-full h-full"
+          <Particles className="z-0 absolute top-0 left-0 w-full h-full"
             params={{
               particles: {
                 number: {
-                  value: 50,
+                  value: 60,
                   density: {
                     enable: true,
                     value_area: 800
@@ -143,7 +143,7 @@ const Index = (props) => {
 
         {/* Layout for the about section */}
         <div id="about" className="z-20 bg-darker xl:min-h-screen">
-          <div className="w-11/12 mx-auto h-full flex flex-col py-20 md:py-0 md:flex-row items-center">
+          <div className="container w-11/12 mx-auto h-full flex flex-col py-20 md:py-0 md:flex-row items-center">
             <picture className="md:w-6/12 h-full pt-8 xl:pt-16 mx-auto">
               <source srcSet={portraitWebp} type="image/webp" />
               <source srcSet={portraitPng} type="image/png" /> 
@@ -168,7 +168,7 @@ const Index = (props) => {
 
         {/* Layout for the portfolio section */}
         <div id="project" className="w-11/12 mx-auto flex flex-col items-center justify-center py-20 xl:py-auto xl:min-h-screen">
-          <div className="w-full flex flex-col items-center">
+          <div className="container w-full flex flex-col items-center">
             <span className="text-sm text-primary font-semibold pr-2">
               Projects
             </span>
@@ -181,7 +181,7 @@ const Index = (props) => {
 
         {/* Layout for the testimonials section */}
         <div id="testimonial" className="flex justify-center items-center bg-darker py-20 xl:py-auto  xl:min-h-screen w-full">
-            <div className="w-full md:w-11/12 flex flex-col justify-center items-stretch py-1">
+            <div className="container w-full md:w-11/12 flex flex-col justify-center items-stretch py-1">
                 <span className="text-sm text-center text-primary font-semibold pr-2">
                   Testimonials
                 </span>
