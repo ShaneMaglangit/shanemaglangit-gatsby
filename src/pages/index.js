@@ -144,7 +144,7 @@ const Index = (props) => {
           {/* Layout for the about section */}
           <div id="about" className="z-20 bg-darker xl:min-h-screen">
             <div className="container w-11/12 mx-auto h-full flex flex-col py-20 md:py-0 md:flex-row min-h-screen items-center">
-              <div className="w-6/12 py-20 pl-16 pr-6">
+              <div className="md:w-6/12 md:py-20 md:pl-16 md:pr-6">
                 <p className="mb-2 text-primary text-xs font-normal tracking-widest">SHANE MAGLANGIT | <span className="text-white animate-pulse">SOFTWARE DEVELOPER</span></p>
                 <div className="relative bg-light-dark shadow-md rounded">
                   <picture className="h-full pt-8 xl:pt-16 mx-auto">
@@ -154,12 +154,10 @@ const Index = (props) => {
                   </picture>
                 </div>
               </div>
-              <div className="md:w-6/12 px-2 md:px-4">
-                <div className="flex items-center w-100 mt-8">
-                  <span className="text-sm text-primary font-semibold pr-2">
-                    About me
-                  </span>
-                </div>
+              <div className="md:w-6/12 md:px-4">
+                <p className=" mt-4 md:mt-8 w-100 text-sm text-primary font-semibold pr-2">
+                  About me
+                </p>
                 <h2 className="text-xl xl:text-3xl text-left text-white font-bold">
                   Based on the Philippines,<br />I am a student and a developer.
                 </h2>
