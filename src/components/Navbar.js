@@ -2,7 +2,7 @@ import { Link } from "gatsby"
 import React, {useState} from "react"
 import NavbarItems from "./NavbarItems"
 
-function Navbar ({ showContact }) {
+const Navbar = ({ showContact }) => {
     const [isExpanded, toggleExpansion] = useState(false)
     return (
         <>

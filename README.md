@@ -37,4 +37,4 @@ To wrap things up, run the following command to start the project.
 gatsby develop
 ```
 
-Now you'll be all set to go. You may access the site through http://localhost:8080/.
+Now you'll be all set to go. You may access the site through http://localhost:8000/.

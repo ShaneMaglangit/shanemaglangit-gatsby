@@ -4,7 +4,7 @@ import { graphql, StaticQuery } from "gatsby"
 const CircularLinkedList = require("../classes/CircularLinkedList.js");
 
 // Queries the data and render the testimonial slider
-export default function TestimonialSlider(props) { 
+const TestimonialSlider = ({props}) => { 
     return(
         // Static graphql query for retrieving the json data from ./content/testimonial.json
         <StaticQuery
@@ -74,3 +74,5 @@ const TestimonialSliderLayout = ({ data }) => {
         </>
     )
 }
+
+export default TestimonialSlider
