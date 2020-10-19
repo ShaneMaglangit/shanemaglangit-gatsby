@@ -173,7 +173,7 @@ const Index = (props) => {
           </div>
 
           {/* Layout for the statistics section */}
-          <div id="statistics" className="w-11/12 mx-auto flex items-center justfy-center py-20 xl:py-auto min-h-screen md:min-h-0 xl:min-h-screen">
+          <div id="statistics" className="w-11/12 mx-auto flex items-center justfy-center py-20 xl:py-auto">
             <div className="container w-full flex flex-col items-center">
                 <span className="w-full text-left text-sm text-primary font-semibold pr-2">
                   Statistics
