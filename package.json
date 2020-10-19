@@ -30,6 +30,7 @@
     "gatsby-plugin-stylus": "^2.3.13",
     "gatsby-react-router-scroll": "^3.0.14",
     "gatsby-source-filesystem": "^2.3.34",
+    "gatsby-source-mysql": "^2.2.3",
     "gatsby-transformer-json": "^2.4.14",
     "gatsby-transformer-sharp": "^2.5.17",
     "react": "^16.14.0",

@@ -1,28 +1,58 @@
+import { graphql } from "gatsby"
 import React from "react"
+import FeaturedProjectList from "../../components/FeaturedProjectList"
 import Layout from "../../components/Layout"
-import TestimonialSlider from "../../components/TestimonialSlider"
-import Statistics from "../../components/Statistics"
-import ProjectSlider from "../../components/ProjectSlider"
-import portraitWebp from "../../images/portrait.webp"
-import portraitPng from "../../images/portrait.png"
-import Particles from "react-particles-js"
-import scrollTo from "gatsby-plugin-smoothscroll"
+import { useStaticQuery } from "gatsby"
+import ProjectList from "../../components/ProjectList"
 
 const Software = (props) => {
+  const data = useStaticQuery(graphql`
+    query{
+      featured: allMysqlSoftwareProjects(filter: {featured: {eq: 1}}) {
+        edges {
+          node {
+            id
+            title
+            description
+            featured
+            source
+            view
+            category
+          }
+        }
+      }
+      others: allMysqlSoftwareProjects(filter: {featured: {eq: 0}}) {
+        edges {
+          node {
+            id
+            title
+            description
+            featured
+            source
+            view
+            category
+          }
+        }
+      }
+    }
+  `)
+
   return (
     <Layout location={props.location}>
-      <main className="w-full flex-grow flex flex-col justify-around">
-          <div className="flex">
-              <div className="w-full flex">
-                  <div className="w-4/12"></div>
-                  <div className="w-8/12">
-                      <p>Project Title</p>
-                      <p>Project Tags</p>
-                      <p>Project Description</p>
-                  </div>
-              </div>
+        <main className="mt-0 md:mt-10">
+          <div className="container flex-grow flex flex-col justify-around mx-auto">
+            <div className="w-full md:w-11/12 mx-auto flex flex-row flex-wrap p-2 md:p-0">
+                <FeaturedProjectList data={data.featured} />
+            </div>
           </div>
-      </main>
+          <div className="bg-darker py-2 md:py-0">
+            <div className="container flex-grow flex flex-col justify-around mx-auto">
+              <div className="w-11/12 mx-auto flex flex-row flex-wrap">
+                <ProjectList data={data.others} />
+              </div>
+            </div>
+          </div>
+        </main>
     </Layout>
   )
 }

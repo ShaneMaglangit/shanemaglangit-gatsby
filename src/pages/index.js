@@ -3,7 +3,6 @@ import Layout from "../components/Layout"
 import Particles from "react-particles-js"
 import TestimonialSlider from "../components/TestimonialSlider"
 import Statistics from "../components/Statistics"
-import ProjectSlider from "../components/ProjectSlider"
 import portraitWebp from "../images/portrait.webp"
 import portraitPng from "../images/portrait.png"
 import scrollTo from "gatsby-plugin-smoothscroll"
@@ -182,19 +181,6 @@ const Index = (props) => {
                   What I achieved so far
                 </h1>
                 <Statistics />
-            </div>
-          </div>
-
-          {/* Layout for the portfolio section */}
-          <div id="project" className="w-11/12 mx-auto flex flex-col items-center justify-center py-20 xl:py-auto xl:min-h-screen">
-            <div className="container w-full flex flex-col items-center">
-              <span className="text-sm text-primary font-semibold pr-2">
-                Projects
-              </span>
-              <h1 className="px-4 pt-2 text-2xl md:text-3xl text-center text-white font-bold">
-                Previous Projects
-              </h1>
-              <ProjectSlider />
             </div>
           </div>
 
