@@ -2,6 +2,7 @@ import React from "react"
 import Layout from "../components/Layout"
 import Particles from "react-particles-js"
 import TestimonialSlider from "../components/TestimonialSlider"
+import Statistics from "../components/Statistics"
 import ProjectSlider from "../components/ProjectSlider"
 import portraitWebp from "../images/portrait.webp"
 import portraitPng from "../images/portrait.png"
@@ -143,9 +144,12 @@ const Index = (props) => {
 
           {/* Layout for the about section */}
           <div id="about" className="z-20 bg-darker xl:min-h-screen">
-            <div className="container w-11/12 mx-auto h-full flex flex-col py-20 md:py-0 md:flex-row min-h-screen items-center">
-              <div className="md:w-6/12 md:py-20 md:pl-16 md:pr-6">
-                <p className="mb-2 text-primary text-xs font-normal tracking-widest">SHANE MAGLANGIT | <span className="text-white animate-pulse">SOFTWARE DEVELOPER</span></p>
+            <div className="container w-11/12 mx-auto h-full flex flex-col py-20 md:py-0 md:flex-row min-h-screen md:min-h-0 xl:min-h-screen items-center">
+              <div className="md:w-5/12 md:py-20 md:pr-6">
+                <div className="mb-2 flex flex-wrap">
+                  <p className="text-primary text-xs font-normal tracking-widest">SHANE MAGLANGIT |&nbsp;</p>
+                  <p className="text-xs font-normal tracking-widest text-white animate-pulse">SOFTWARE DEVELOPER</p>
+                </div>
                 <div className="relative bg-light-dark shadow-md rounded">
                   <picture className="h-full pt-8 xl:pt-16 mx-auto">
                     <source srcSet={portraitWebp} type="image/webp" />
@@ -154,7 +158,7 @@ const Index = (props) => {
                   </picture>
                 </div>
               </div>
-              <div className="md:w-6/12 md:px-4">
+              <div className="md:w-7/12 md:px-4">
                 <p className=" mt-4 md:mt-8 w-100 text-sm text-primary font-semibold pr-2">
                   About me
                 </p>
@@ -165,6 +169,19 @@ const Index = (props) => {
                   I am currently 19 years old taking up a bachelors degree in Computer Science under National University Manila in the Philippines. Along with my studies, I also work on freelance projects for software and web development.
                 </p>
               </div>
+            </div>
+          </div>
+
+          {/* Layout for the statistics section */}
+          <div id="statistics" className="w-11/12 mx-auto flex items-center justfy-center py-20 xl:py-auto min-h-screen md:min-h-0 xl:min-h-screen">
+            <div className="container w-full flex flex-col items-center">
+                <span className="w-full text-left text-sm text-primary font-semibold pr-2">
+                  Statistics
+                </span>
+                <h1 className="w-full text-left pt-2 text-2xl md:text-3xl text-white font-bold">
+                  What I achieved so far
+                </h1>
+                <Statistics />
             </div>
           </div>
 
@@ -182,7 +199,7 @@ const Index = (props) => {
           </div>
 
           {/* Layout for the testimonials section */}
-          <div id="testimonial" className="flex justify-center items-center bg-darker py-20 xl:py-auto  xl:min-h-screen w-full">
+          <div id="testimonial" className="flex justify-center items-center bg-darker py-20 xl:py-auto  min-h-screen md:min-h-0 xl:min-h-screen w-full">
               <div className="container w-full md:w-11/12 flex flex-col justify-center items-stretch py-1">
                   <span className="text-sm text-center text-primary font-semibold pr-2">
                     Testimonials
