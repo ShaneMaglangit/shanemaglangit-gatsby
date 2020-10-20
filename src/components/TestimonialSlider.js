@@ -10,12 +10,12 @@ const TestimonialSlider = ({props}) => {
         <StaticQuery
             query={
                 graphql`query TestimonialQuery {
-                    allTestimonialsJson {
+                    allStrapiTestimonials {
                         edges {
                             node {
                                 name
-                                company
                                 message
+                                company
                             }
                         }
                     }
@@ -29,7 +29,7 @@ const TestimonialSlider = ({props}) => {
 
 const TestimonialSliderLayout = ({ data }) => {
     // Get all of the data from the graphql query result and convert it into a circular doubly linked list
-    var root = new CircularLinkedList().addNodes(data.allTestimonialsJson.edges).get(0);
+    var root = new CircularLinkedList().addNodes(data.allStrapiTestimonials.edges).get(0);
 
     // useState for the testimonials
     const [testimonial, setTestimonial] = useState(root);
