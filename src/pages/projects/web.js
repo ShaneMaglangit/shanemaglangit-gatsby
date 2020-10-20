@@ -16,6 +16,15 @@ const Web = (props) => {
             description
             source
             ref
+            preview {
+              childImageSharp {
+                  fluid {
+                      ...GatsbyImageSharpFluid_withWebp
+                  }
+              }
+              extension
+              publicURL
+            }
           }
         }
       }
@@ -27,6 +36,15 @@ const Web = (props) => {
             description
             source
             ref
+            preview {
+              childImageSharp {
+                  fluid {
+                      ...GatsbyImageSharpFluid_withWebp
+                  }
+              }
+              extension
+              publicURL
+            }
           }
         }
       }
@@ -41,7 +59,7 @@ const Web = (props) => {
                 <FeaturedProjectList data={data.featured} />
             </div>
           </div>
-          <div className="bg-darker py-2 md:py-0">
+          <div className="bg-darker py-2 md:py-4">
             <div className="container flex-grow flex flex-col justify-around mx-auto">
               <div className="w-11/12 mx-auto flex flex-row flex-wrap">
                 <ProjectList data={data.others} />
