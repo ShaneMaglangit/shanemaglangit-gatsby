@@ -5,21 +5,23 @@ import { OutboundLink } from "gatsby-plugin-google-analytics"
 const ProjectList = ({data}) => { 
     return (
         <>
-            {data.edges.map(edges => {
-                return(
-                    <div className="w-full md:w-4/12 lg:w-3/12 my-2 md:my-4 md:px-2 flex items-center">
-                        <div className="w-full h-full min-h-40 p-6 flex-grow bg-light-dark">
-                            <h1 className="text-base text-primary font-semibold">{edges.node.title}</h1>
-                            <h2 className="text-sm text-white mt-2">{edges.node.description}</h2>
-                            <OutboundLink href={edges.node.source} target="_blank" rel="noreferrer">
-                                <button className="text-accent text-sm mt-2 focus:outline-none">
-                                    Source
-                                </button>
-                            </OutboundLink>
+            <div className="w-11/12 mx-auto flex items-stretch flex-wrap">
+                {data.edges.map(edges => {
+                    return(
+                        <div className="w-full md:w-4/12 lg:w-3/12 my-2 md:my-4 md:px-2 flex items-center">
+                            <div className="w-full h-full min-h-40 p-6 flex-grow bg-light-dark">
+                                <h1 className="text-base text-primary font-semibold">{edges.node.title}</h1>
+                                <h2 className="text-sm text-white mt-2">{edges.node.description}</h2>
+                                <OutboundLink href={edges.node.source} target="_blank" rel="noreferrer">
+                                    <button className="text-accent text-sm mt-2 focus:outline-none">
+                                        Source
+                                    </button>
+                                </OutboundLink>
+                            </div>
                         </div>
-                    </div>
-                )
-            })}
+                    )
+                })}
+            </div>
         </>
     )
 }

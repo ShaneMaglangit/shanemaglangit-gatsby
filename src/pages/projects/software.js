@@ -7,8 +7,8 @@ import ProjectList from "../../components/ProjectList"
 
 const Software = (props) => {
   const data = useStaticQuery(graphql`
-    query{
-      featured: allStrapiProjects(filter: {category: {eq: "software"}, featured: {eq: true}}) {
+    query {
+      featuredSoftware: allStrapiProjects(filter: {category: {eq: "software"}, featured: {eq: true}}) {
         edges {
           node {
             id
@@ -28,7 +28,7 @@ const Software = (props) => {
           }
         }
       }
-      others: allStrapiProjects(filter: {category: {eq: "software"}, featured: {eq: false}}) {
+      software: allStrapiProjects(filter: {category: {eq: "software"}, featured: {eq: false}}) {
         edges {
           node {
             id
@@ -55,14 +55,12 @@ const Software = (props) => {
     <Layout location={props.location}>
         <main className="mt-0 md:mt-10">
           <div className="container flex-grow flex flex-col justify-around mx-auto">
-            <div className="w-full md:w-11/12 mx-auto flex flex-row flex-wrap p-2 md:p-0">
-                <FeaturedProjectList data={data.featured} />
-            </div>
+            <FeaturedProjectList data={data.featuredSoftware} />
           </div>
           <div className="bg-darker py-2 md:py-4">
             <div className="container mx-auto">
               <div className="w-11/12 mx-auto flex items-stretch flex-wrap">
-                <ProjectList data={data.others} />
+                <ProjectList data={data.software} />
               </div>
             </div>
           </div>
