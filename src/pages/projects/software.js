@@ -8,29 +8,25 @@ import ProjectList from "../../components/ProjectList"
 const Software = (props) => {
   const data = useStaticQuery(graphql`
     query{
-      featured: allMysqlSoftwareProjects(filter: {featured: {eq: 1}}) {
+      featured: allStrapiProjects(filter: {category: {eq: "software"}, featured: {eq: true}}) {
         edges {
           node {
             id
             title
             description
-            featured
             source
-            view
-            category
+            ref
           }
         }
       }
-      others: allMysqlSoftwareProjects(filter: {featured: {eq: 0}}) {
+      others: allStrapiProjects(filter: {category: {eq: "software"}, featured: {eq: false}}) {
         edges {
           node {
             id
             title
             description
-            featured
             source
-            view
-            category
+            ref
           }
         }
       }
