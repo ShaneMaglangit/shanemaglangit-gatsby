@@ -10,7 +10,7 @@ const FeaturedProjectList = ({data}) => {
             {data.edges.map(edges => {
                 return(
                     <div className="w-full mx-auto mb-4 flex flex-wrap shadow-md items-center bg-dark-accent">
-                        {edges.node.preview != null &&
+                        {edges.node.preview !== null &&
                             <BackgroundImage
                                 className="w-full md:w-5/12 h-64 bg-light-dark" 
                                 fluid={edges.node.preview.childImageSharp.fluid} 
