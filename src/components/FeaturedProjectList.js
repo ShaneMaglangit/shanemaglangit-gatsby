@@ -1,7 +1,6 @@
 import React from "react"
 import { OutboundLink } from "gatsby-plugin-google-analytics"
 import BackgroundImage from "gatsby-background-image"
-import notFoundImage from "../images/not-found-image.svg"
 
 // Queries the data and render the project slider
 const FeaturedProjectList = ({data}) => { 
@@ -28,14 +27,14 @@ const FeaturedProjectList = ({data}) => {
                         <div className="w-full md:w-7/12 flex-grow p-4 md:pl-10">
                             <h1 className="text-2xl text-primary font-semibold">{edges.node.title}</h1>
                             <h2 className="text-md text-white mt-2">{edges.node.description}</h2>
-                            { edges.node.source != null && edges.node.source != "" &&
+                            { edges.node.source !== null && edges.node.source !== "" &&
                                 <OutboundLink href={edges.node.source} target="_blank" rel="noreferrer">
                                     <button className="font-medium mr-2 text-gray-300 mt-4 bg-light-dark text-white py-2 px-4 focus:outline-none">
                                         Source
                                     </button>
                                 </OutboundLink>
                             }
-                            { edges.node.ref != null && edges.node.ref != "" &&
+                            { edges.node.ref !== null && edges.node.ref !== "" &&
                                 <OutboundLink href={edges.node.ref} target="_blank" rel="noreferrer">
                                     <button className="font-medium mr-2 text-gray-300 mt-4 bg-light-dark text-white py-2 px-4 focus:outline-none">
                                         View

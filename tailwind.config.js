@@ -43,6 +43,7 @@ module.exports = {
         "screen-60" : "60vh"
       },
       minHeight: {
+        "40" : "10rem",
         "quarter" : "25vh",
         "half" : "50vh"
       },
