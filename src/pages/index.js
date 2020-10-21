@@ -14,7 +14,7 @@ const Index = (props) => {
           {/* Layout for the header section / hero */}
           <div id="header" className="relative w-full h-screen flex flex-col items-center justify-center">
             <h1 className="px-3 text-3xl md:text-4xl xl:text-5xl text-center text-primary font-bold">
-                I'm Shane Maglangit, <br /> 
+                I'm Shane Maglangit,<br /> 
               <span className="text-white">
                 I design and build Software.
               </span>
@@ -146,8 +146,13 @@ const Index = (props) => {
             <div className="container w-11/12 mx-auto h-full flex flex-col py-20 md:py-0 md:flex-row min-h-screen md:min-h-0 xl:min-h-screen items-center">
               <div className="md:w-5/12 md:py-20 md:pr-6">
                 <div className="mb-2 flex flex-wrap">
-                  <p className="text-primary text-xs font-normal tracking-widest">SHANE MAGLANGIT |&nbsp;</p>
-                  <p className="text-xs font-normal tracking-widest text-white animate-pulse">SOFTWARE DEVELOPER</p>
+                  <p className="text-primary text-xs font-normal tracking-widest">
+                    <span role="img" aria-label="philippines">👦 </span> 
+                    SHANE MAGLANGIT |&nbsp;
+                  </p>
+                  <p className="text-xs font-normal tracking-widest text-white animate-pulse">
+                    SOFTWARE DEVELOPER
+                    </p>
                 </div>
                 <div className="relative bg-light-dark shadow-md rounded">
                   <picture className="h-full pt-8 xl:pt-16 mx-auto">
@@ -162,7 +167,7 @@ const Index = (props) => {
                   About me
                 </p>
                 <h2 className="text-xl xl:text-3xl text-left text-white font-bold">
-                  Based on the Philippines,<br />I am a student and a developer.
+                  Based on the Philippines,<br />I am a student and a developer&nbsp;&nbsp;<span role="img" aria-label="rocket">🚀</span>
                 </h2>
                 <p className="pt-2 text-gray-400 text-sm xl:text-base">
                   I am currently 19 years old taking up a bachelors degree in Computer Science under National University Manila in the Philippines. Along with my studies, I also work on freelance projects for software and web development.
@@ -178,7 +183,7 @@ const Index = (props) => {
                   Statistics
                 </span>
                 <h1 className="w-full text-left pt-2 text-2xl md:text-3xl text-white font-bold">
-                  What I achieved so far
+                  What I achieved so far <span role="img" aria-label="fire">🔥</span>
                 </h1>
                 <Statistics />
             </div>
