@@ -6,7 +6,7 @@ import BackgroundImage from "gatsby-background-image"
 const FeaturedProjectList = ({data}) => { 
     return (
         <>
-            <div className="w-full md:w-10/12 mx-auto flex flex-row flex-wrap p-2 md:p-0">
+            <div className="w-full md:w-11/12 mx-auto flex flex-row flex-wrap p-2 md:p-0">
                 {data.edges.map(edges => {
                     return(
                         <div className="w-full mx-auto mb-4 flex flex-wrap shadow-md items-center bg-dark-accent">
@@ -15,7 +15,7 @@ const FeaturedProjectList = ({data}) => {
                                     className="w-full md:w-5/12 h-64 bg-light-dark" 
                                     fluid={edges.node.preview.childImageSharp.fluid} 
                                     alt={edges.node.title}
-                                    objectFit="contain" />
+                                    objectFit="cover" />
                             }
                             {edges.node.preview === null &&
                                 <div className="w-full md:w-5/12 h-64 bg-light-dark flex justify-center items-center">
