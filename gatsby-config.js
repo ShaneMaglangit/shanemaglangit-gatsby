@@ -48,13 +48,6 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "content",
-        path: "./content/",
-      },
-    },
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
         path: "./src/images/",
       },
     },
@@ -68,27 +61,12 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-source-mysql`,
+      resolve: "gatsby-source-strapi",
       options: {
-        connectionDetails: {
-          host: 'localhost',
-          user: 'root',
-          password: '',
-          database: 'gatsby-shanemaglangit'
-        },
-        queries: [
-          {
-            statement: "SELECT * FROM projects WHERE category='software'",
-            idFieldName: "id",
-            name: "softwareProjects"
-          },
-          {
-            statement: "SELECT * FROM projects WHERE category='website'",
-            idFieldName: "id",
-            name: "websiteProjects"
-          }
-        ]
-      }
+        apiURL: "http://localhost:1337",
+        contentTypes: ["projects", "testimonials"],
+        queryLimit: 1000
+      },
     }
   ],
 }

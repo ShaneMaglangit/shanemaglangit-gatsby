@@ -43,12 +43,14 @@ module.exports = {
         "screen-60" : "60vh"
       },
       minHeight: {
+        "40" : "10rem",
         "quarter" : "25vh",
         "half" : "50vh"
       },
       colors: {
         "transparent-dark" : "#222222A1",
         "light-dark" : "#323232",
+        "dark-accent" : "#242424",
         "dark" : "#222222",
         "darker" : "#1F1F1F",
         "primary" : "#F26C4F",

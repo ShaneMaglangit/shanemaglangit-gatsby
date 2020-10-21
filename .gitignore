@@ -76,3 +76,6 @@ yarn-error.log
 # BFG Repo Cleaner
 bfg.jar
 filter.txt
+
+# Strapi
+cms

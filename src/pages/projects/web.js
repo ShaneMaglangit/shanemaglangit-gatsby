@@ -7,30 +7,44 @@ import ProjectList from "../../components/ProjectList"
 
 const Web = (props) => {
   const data = useStaticQuery(graphql`
-    query{
-      featured: allMysqlWebsiteProjects(filter: {featured: {eq: 1}}) {
+    query {
+      featuredWebsites: allStrapiProjects(filter: {category: {eq: "website"}, featured: {eq: true}}) {
         edges {
           node {
             id
             title
             description
-            featured
             source
-            view
-            category
+            ref
+            preview {
+              childImageSharp {
+                  fluid {
+                      ...GatsbyImageSharpFluid_withWebp
+                  }
+              }
+              extension
+              publicURL
+            }
           }
         }
       }
-      others: allMysqlWebsiteProjects(filter: {featured: {eq: 0}}) {
+      websites: allStrapiProjects(filter: {category: {eq: "website"}, featured: {eq: false}}) {
         edges {
           node {
             id
             title
             description
-            featured
             source
-            view
-            category
+            ref
+            preview {
+              childImageSharp {
+                  fluid {
+                      ...GatsbyImageSharpFluid_withWebp
+                  }
+              }
+              extension
+              publicURL
+            }
           }
         }
       }
@@ -41,15 +55,11 @@ const Web = (props) => {
     <Layout location={props.location}>
         <main className="mt-0 md:mt-10">
           <div className="container flex-grow flex flex-col justify-around mx-auto">
-            <div className="w-full md:w-11/12 mx-auto flex flex-row flex-wrap p-2 md:p-0">
-                <FeaturedProjectList data={data.featured} />
-            </div>
+            <FeaturedProjectList data={data.featuredWebsites} />
           </div>
-          <div className="bg-darker py-2 md:py-0">
-            <div className="container flex-grow flex flex-col justify-around mx-auto">
-              <div className="w-11/12 mx-auto flex flex-row flex-wrap">
-                <ProjectList data={data.others} />
-              </div>
+          <div className="bg-darker py-2 md:py-4">
+            <div className="container mx-auto">
+              <ProjectList data={data.websites} />
             </div>
           </div>
         </main>
