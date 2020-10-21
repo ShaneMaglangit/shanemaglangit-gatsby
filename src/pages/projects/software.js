@@ -59,9 +59,7 @@ const Software = (props) => {
           </div>
           <div className="bg-darker py-2 md:py-4">
             <div className="container mx-auto">
-              <div className="w-11/12 mx-auto flex items-stretch flex-wrap">
                 <ProjectList data={data.software} />
-              </div>
             </div>
           </div>
         </main>

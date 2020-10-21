@@ -65,7 +65,7 @@ module.exports = {
       options: {
         apiURL: "http://localhost:1337",
         contentTypes: ["projects", "testimonials"],
-        queryLimit: 1000,
+        queryLimit: 1000
       },
     }
   ],

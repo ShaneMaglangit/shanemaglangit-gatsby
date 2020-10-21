@@ -7,7 +7,7 @@ const Navbar = ({ location, showContact }) => {
     return (
         <>
             {/* Wrapper for the navigation bar */}
-            <div className={`${ isExpanded ? `relative shadow-md` : location.pathname === "/" ? `absolute` : `relative`} w-full z-50`}>
+            <div className={`${ isExpanded ? `relative shadow-md` : location != null && location.pathname === "/" ? `absolute` : `relative`} w-full z-50`}>
                 <nav className="container mx-auto flex flex-wrap items-center justify-between w-full p-6">
                     {/* Site logo */}
                     <Link to="/" className="flex items-center flex-shrink-0 text-white mr-6">
