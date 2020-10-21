@@ -5,10 +5,10 @@ import { OutboundLink } from "gatsby-plugin-google-analytics"
 const ProjectList = ({data}) => { 
     return (
         <>
-            <div className="w-full mx-auto flex items-stretch flex-wrap">
+            <div className="w-11/12 mx-auto flex items-stretch flex-wrap">
                 {data.edges.map(edges => {
                     return(
-                        <div className="w-full md:w-4/12 lg:w-3/12 my-2 md:my-2 md:px-2 flex items-center">
+                        <div key={edges.node.id} className="w-full md:w-4/12 lg:w-3/12 my-2 md:my-2 md:px-2 flex items-center">
                             <div className="w-full h-full min-h-40 p-6 flex-grow bg-light-dark">
                                 <h1 className="text-base text-primary font-semibold">{edges.node.title}</h1>
                                 <h2 className="text-sm text-white mt-2">{edges.node.description}</h2>{ edges.node.source !== null && edges.node.source !== "" &&
