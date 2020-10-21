@@ -19,7 +19,7 @@ const Footer = () => {
                     <OutboundLink href="https://www.aedin.com/in/shanemaglangit/" target="_blank" rel="noreferrer" className="px-2 text-primary">Facebook</OutboundLink>
                 </div>
                 <h3 className="text-base md:text-lg text-white font-semibold my-2">Walking towards my goal one step at a time</h3>
-                Handcrafted by me &copy; 2020
+                Handcrafted with <span role="img" aria-label="heart">❤️</span> by me &copy; 2020
             </footer>
         </div>
     </>
