@@ -35,6 +35,7 @@ Here are the structure of the collections
 **Projects**
 ```
 featured: Boolean
+priority: Number
 title: Text
 description: Text
 source: Text
