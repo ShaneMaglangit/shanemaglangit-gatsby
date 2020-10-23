@@ -6,6 +6,7 @@ import { useStaticQuery } from "gatsby"
 import ProjectList from "../../components/ProjectList"
 
 const Software = (props) => {
+  // Get the list of software projects divided into featured and non-featured ones from the Strapi CMS
   const data = useStaticQuery(graphql`
     query {
       featuredSoftware: allStrapiProjects(filter: {category: {eq: "software"}, featured: {eq: true}}) {

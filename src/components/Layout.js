@@ -6,8 +6,10 @@ import Contact from "./Contact"
 import CallToAction from "./CallToAction"
 
 const Layout = ({ location, children }) => {
+  // useState for the contact modal visibility
   const[contactVisible, setContactVisibility] = useState(false);
 
+  // functions invoked by the children to toggle the contact form's visibility
   function showContact() {
     setContactVisibility(true);
   }

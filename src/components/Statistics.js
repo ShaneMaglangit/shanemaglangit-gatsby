@@ -1,13 +1,16 @@
 import React from "react"
 
 const Statistics = () => {
+    // Declare the numbers that will be displayed on each card for this section
     let clientCount = 20;
     let websiteCount = 11;
-    let softwareCount = 31;
+    let softwareCount = 34;
 
+    // Get the different between the date of my first project and the current date. This will be displayed as my day count as a developer.
     let startDate = new Date(2019, 9, 8, 0, 0, 0, 0);
     let daysAsDeveloper = getDateDiff(new Date(), startDate);
 
+    // Gets the difference in days between 2 dates
     function getDateDiff(x, y) {
         const _MS_PER_DAY = 1000 * 60 * 60 * 24;
         const xUTC = Date.UTC(x.getFullYear(), x.getMonth(), x.getDate());
