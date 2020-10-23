@@ -3,6 +3,7 @@ import React, {useState} from "react"
 import NavbarItems from "./NavbarItems"
 
 const Navbar = ({ location, showContact }) => {
+    // useState to expand or hide the navigation menu for mobile
     const [isExpanded, toggleExpansion] = useState(false)
     return (
         <>
