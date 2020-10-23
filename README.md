@@ -26,11 +26,33 @@ Once you have a working clone of the project, you may use the following command 
 npm install
 ```
 
-4. **Add Google Analytics ID**
+4. **Set up the Strapi Headless CMS**
+
+This site uses Strapi as its CMS. Read the [getting started with gatsby](https://strapi.io/documentation/v3.x/getting-started/gatsby.html) as your guide on setting it up.
+
+Here are the structure of the collections
+**Projects**
+```
+featured: Boolean
+title: Text
+description: Text
+source: Text
+ref: Text
+category: Enum(software, website)
+preview: Media
+```
+**Testimonials**
+```
+name: Text
+company: Text
+message: Text
+```
+
+5. **Add Google Analytics ID**
 
 To have the project running, it is necessary to put your own GA trackig ID under gatsby-config.js. Otherwise, you can remove it completely.
 
-5. **Start the project**
+6. **Start the project**
 
 To wrap things up, run the following command to start the project.
 ```bash
