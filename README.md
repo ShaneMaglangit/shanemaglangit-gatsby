@@ -31,6 +31,7 @@ npm install
 This site uses Strapi as its CMS. Read the [getting started with gatsby](https://strapi.io/documentation/v3.x/getting-started/gatsby.html) as your guide on setting it up.
 
 Here are the structure of the collections
+
 **Projects**
 ```
 featured: Boolean
