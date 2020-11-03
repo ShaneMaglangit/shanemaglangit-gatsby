@@ -41,7 +41,7 @@ const TestimonialSliderLayout = ({ data }) => {
                 {/* Left button section for selecting previous testimonial */}
                 <div className="w-6/12 lg:w-3/12 flex items-end justify-start lg:justify-end mt-4 focus:outline-none order-2 lg:order-1">
                     <button onClick={() => setTestimonial(testimonial.prev)} className="flex items-center mx-3 focus:outline-none">
-                        <svg className="h-8 w-8 mr-2" width="54" height="54" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.495 24.829"><path d="M3.667,0,0,3.667,7.333,11,0,18.333,3.667,22l11-11Z" transform="translate(16.081 23.414) rotate(180)" fill="none" stroke="#F26C4F" strokeMiterlimit="10" strokeWidth="2"/></svg>
+                        <svg className="h-8 w-8 mr-2" width="54" height="54" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 17.495 24.829"><path d="M3.667,0,0,3.667,7.333,11,0,18.333,3.667,22l11-11Z" transform="translate(16.081 23.414) rotate(180)" fill="none" stroke="#F26C4F" strokeMiterlimit="10" strokeWidth="2"/></svg>
                         {/* Set the current testimonial to the previous node on buton click */}
                         <div className="text-right">
                             <p className="text-left md:text-right text-xs font-thin text-white opacity-50">{testimonial.prev.data.company}</p>
@@ -67,7 +67,7 @@ const TestimonialSliderLayout = ({ data }) => {
                             <p className="text-right md:text-left text-xs font-thin text-white opacity-50">{testimonial.next.data.company}</p>
                             <h4 className="text-right text-sm md:text-lg text-white font-semibold">{testimonial.next.data.name}</h4>
                         </div>
-                        <svg className="fill-current text-primary h-8 w-8 ml-2"  xmlns="http://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 14.667 22"><path d="M318.667,387,315,390.667,322.333,398,315,405.333,318.667,409l11-11Z" transform="translate(-315 -387)"/></svg>
+                        <svg className="fill-current text-primary h-8 w-8 ml-2"  xmlns="https://www.w3.org/2000/svg" width="54" height="54" viewBox="0 0 14.667 22"><path d="M318.667,387,315,390.667,322.333,398,315,405.333,318.667,409l11-11Z" transform="translate(-315 -387)"/></svg>
                     </button>
                 </div>
             </div>

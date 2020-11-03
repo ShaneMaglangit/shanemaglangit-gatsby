@@ -9,7 +9,7 @@ const Software = (props) => {
   // Get the list of software projects divided into featured and non-featured ones from the Strapi CMS
   const data = useStaticQuery(graphql`
     query {
-      featuredSoftware: allStrapiProjects(filter: {category: {eq: "software"}, featured: {eq: true}}) {
+      featuredSoftware: allStrapiProjects(sort: {fields: priority}, filter: {category: {eq: "software"}, featured: {eq: true}}) {
         edges {
           node {
             id
