@@ -4,7 +4,7 @@ const Statistics = () => {
     // Declare the numbers that will be displayed on each card for this section
     let clientCount = 20;
     let websiteCount = 11;
-    let softwareCount = 34;
+    let softwareCount = 35;
 
     // Get the different between the date of my first project and the current date. This will be displayed as my day count as a developer.
     let startDate = new Date(2019, 9, 8, 0, 0, 0, 0);
