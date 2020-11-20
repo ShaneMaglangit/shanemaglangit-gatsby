@@ -41,12 +41,17 @@ module.exports = {
         "screen-30" : "30vh",
         "screen-50" : "50vh",
         "screen-60" : "60vh",
+        "screen-75" : "75vh",
+        "screen-80" : "80vh",
+        "screen-90" : "90vh",
         "screen-full" : "calc(var(--vh, 1vh) * 100)",
       },
       minHeight: {
         "40" : "10rem",
+        "96" : "24rem",
+        "128": "32rem",
         "quarter" : "25vh",
-        "half" : "50vh"
+        "half" : "50vh",
       },
       colors: {
         "transparent-dark" : "#222222A1",
