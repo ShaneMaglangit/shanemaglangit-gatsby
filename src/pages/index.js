@@ -163,7 +163,7 @@ const Index = (props) => {
                 </div>
               </div>
               <div className="md:w-7/12 md:px-4">
-                <p className=" mt-4 md:mt-8 w-100 text-sm text-primary font-semibold pr-2">
+                <p className="mt-4 md:mt-8 w-100 text-sm text-primary font-semibold pr-2">
                   About me
                 </p>
                 <h2 className="text-xl xl:text-3xl text-left text-white font-bold">
