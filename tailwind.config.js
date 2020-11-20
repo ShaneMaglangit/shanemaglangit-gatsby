@@ -40,7 +40,8 @@ module.exports = {
       height: {
         "screen-30" : "30vh",
         "screen-50" : "50vh",
-        "screen-60" : "60vh"
+        "screen-60" : "60vh",
+        "screen-full" : "calc(var(--vh, 1vh) * 100)",
       },
       minHeight: {
         "40" : "10rem",

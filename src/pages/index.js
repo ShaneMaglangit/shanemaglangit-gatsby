@@ -12,7 +12,7 @@ const Index = (props) => {
     <Layout location={props.location}>
       <main className="w-full  flex-grow flex flex-col justify-around">
           {/* Layout for the header section / hero */}
-          <div id="header" className="relative w-full h-screen flex flex-col items-center justify-center">
+          <div id="header" className="relative w-full h-screen-full flex flex-col items-center justify-center">
             <h1 className="px-3 text-3xl md:text-4xl xl:text-5xl text-center text-primary font-bold">
                 I'm Shane Maglangit,<br /> 
               <span className="text-white">
