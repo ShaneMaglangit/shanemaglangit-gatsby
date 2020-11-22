@@ -16,6 +16,7 @@ const Software = (props) => {
             title
             description
             source
+            stack
             ref
             preview {
               childImageSharp {
@@ -36,6 +37,7 @@ const Software = (props) => {
             title
             description
             source
+            stack
             ref
             preview {
               childImageSharp {
@@ -54,7 +56,7 @@ const Software = (props) => {
 
   return (
     <Layout location={props.location}>
-        <main className="mt-0 md:mt-10">
+        <main className="mt-0">
           <div className="container flex-grow flex flex-col justify-around mx-auto">
             <FeaturedProjectList data={data.featuredSoftware} />
           </div>

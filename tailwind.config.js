@@ -41,12 +41,17 @@ module.exports = {
         "screen-30" : "30vh",
         "screen-50" : "50vh",
         "screen-60" : "60vh",
+        "screen-75" : "75vh",
+        "screen-80" : "80vh",
+        "screen-90" : "90vh",
         "screen-full" : "calc(var(--vh, 1vh) * 100)",
       },
       minHeight: {
         "40" : "10rem",
+        "96" : "24rem",
+        "128": "32rem",
         "quarter" : "25vh",
-        "half" : "50vh"
+        "half" : "50vh",
       },
       colors: {
         "transparent-dark" : "#222222A1",
@@ -57,6 +62,9 @@ module.exports = {
         "primary" : "#F26C4F",
         "primary-light" : "#F26C4F",
         "accent" : "#00FFBB"
+      },
+      boxShadow: {
+        "sm-i" : "0 -2px 2px 0 rgba(0, 0, 0, 0.05)",
       },
       inset: {
         "screen-width" : "100vw"

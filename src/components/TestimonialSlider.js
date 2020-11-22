@@ -52,7 +52,7 @@ const TestimonialSliderLayout = ({ data }) => {
                 {/* Main section for the selected testimonial */}
                 <div className="w-full lg:w-6/12 flex flex-col bg-primary text-white p-8 mt-4 mx-4 min-h-half md:min-h-quarter xl:min-h-half order-1 lg:order-2">
                     <div className="flex flex-grow items-center">
-                        <p>"{testimonial.data.message}"</p>
+                        <p className="text-base">"{testimonial.data.message}"</p>
                     </div>
                     <div>
                         <h4 className="text-lg text-right font-semibold">{testimonial.data.name}</h4>

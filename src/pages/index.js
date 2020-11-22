@@ -10,10 +10,10 @@ import scrollTo from "gatsby-plugin-smoothscroll"
 const Index = (props) => {
   return (
     <Layout location={props.location}>
-      <main className="w-full  flex-grow flex flex-col justify-around">
+      <main className="w-full flex-grow flex flex-col justify-around">
           {/* Layout for the header section / hero */}
           <div id="header" className="relative w-full h-screen-full flex flex-col items-center justify-center">
-            <h1 className="px-3 text-3xl md:text-4xl xl:text-5xl text-center text-primary font-bold">
+            <h1 className="px-3 md:px-0 text-3xl md:text-4xl xl:text-5xl text-center text-primary font-bold">
                 I'm Shane Maglangit,<br /> 
               <span className="text-white">
                 I design and build Software.
@@ -155,7 +155,7 @@ const Index = (props) => {
                     </p>
                 </div>
                 <div className="relative bg-light-dark shadow-md rounded">
-                  <picture className="h-full pt-8 xl:pt-16 mx-auto">
+                  <picture className="h-full pt-8 mx-auto">
                     <source srcSet={portraitWebp} type="image/webp" />
                     <source srcSet={portraitPng} type="image/png" /> 
                     <img className="w-full h-full" src={portraitPng} alt="Shane Maglangit Portrait"></img>
