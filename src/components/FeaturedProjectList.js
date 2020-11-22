@@ -33,11 +33,14 @@ const FeaturedProjectList = ({data}) => {
                                             </OutboundLink>
                                         }
                                     </div>
+                                    <div className={`${pos % 2 === 0 ? "justify-start left-0 pl-8" : "justify-end right-0 pr-8"} w-full flex absolute mt-8`}>
+                                        <ul className={`${pos % 2 === 0 ? "justify-start" : "justify-end"} w-5/6 flex flex-wrap text-xs font-semibold text-gray-400 pt-2`}>
+                                            {edges.node.stack !== null && edges.node.stack.split(", ").map(item => {
+                                                return(<li className="px-1 pb-2">{item}</li>)
+                                            })}
+                                        </ul>
+                                    </div>
                                 </div>
-                                <ul className={`${pos % 2 === 0 ? "justify-start" : "justify-end" } w-full px-8 py-2 flex text-xs font-semibold text-gray-400`}>
-                                    <li className="pr-2">Platform</li>
-                                    <li className="pr-2">Language</li>
-                                </ul>
                             </div>
                             <div className={`${pos % 2 === 0 ? "right-0" : "left-0" } w-7/12 flex flex-col items-center justify-center h-full absolute top-0 z-10`}>
                                 {edges.node.preview !== null &&

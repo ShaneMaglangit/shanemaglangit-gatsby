@@ -16,6 +16,7 @@ const Web = (props) => {
             title
             description
             source
+            stack
             ref
             preview {
               childImageSharp {
@@ -36,6 +37,7 @@ const Web = (props) => {
             title
             description
             source
+            stack
             ref
             preview {
               childImageSharp {
