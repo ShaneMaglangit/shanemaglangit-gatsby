@@ -6,11 +6,11 @@ import Img from "gatsby-image"
 const FeaturedProjectList = ({data}) => { 
     return (
         <>
-            <div className="w-full md:w-10/12 mx-auto flex flex-row flex-wrap p-4 md:p-0">
-                {data.edges.map(edges => {
+            <div className="w-full md:w-9/12 mx-auto flex flex-row flex-wrap p-4 md:p-0">
+                {data.edges.map((edges, pos) => {
                     return(
                         <div key={edges.node.id} className="relative w-full xl:min-h-128 inline-block rounded-md">
-                            <div className="w-6/12 h-full flex flex-col justify-center absolute z-20">
+                            <div className={`${pos % 2 === 0 ? "left-0" : "right-0" } w-6/12 h-full flex flex-col justify-center absolute z-20`}>
                                 <div className="w-full bg-gray-100 shadow-md rounded-md p-8">
                                     <header className="">
                                         <h4 className="text-primary font-medium text-xs">Featured Project</h4>
@@ -34,8 +34,12 @@ const FeaturedProjectList = ({data}) => {
                                         }
                                     </div>
                                 </div>
+                                <ul className={`${pos % 2 === 0 ? "justify-start" : "justify-end" } w-full px-8 py-2 flex text-xs font-semibold text-gray-400`}>
+                                    <li className="pr-2">Platform</li>
+                                    <li className="pr-2">Language</li>
+                                </ul>
                             </div>
-                            <div className="w-7/12 flex flex-col items-center justify-center h-full absolute right-0 top-0 z-10">
+                            <div className={`${pos % 2 === 0 ? "right-0" : "left-0" } w-7/12 flex flex-col items-center justify-center h-full absolute top-0 z-10`}>
                                 {edges.node.preview !== null &&
                                     <Img
                                         className="w-full bg-light-dark"
