@@ -9,15 +9,15 @@ const FeaturedProjectList = ({data}) => {
             <div className="w-full md:w-9/12 mx-auto flex flex-row flex-wrap p-4 md:p-0">
                 {data.edges.map((edges, pos) => {
                     return(
-                        <div key={edges.node.id} className="relative w-full xl:min-h-128 inline-block rounded-md">
-                            <div className={`${pos % 2 === 0 ? "left-0" : "right-0" } w-6/12 h-full flex flex-col justify-center absolute z-20`}>
-                                <div className="w-full bg-gray-100 shadow-md rounded-md p-8">
-                                    <header className="">
+                        <div key={edges.node.id} className="relative w-full md:min-h-96 xl:min-h-128 flex  flex-col md:inline-block mb-4 md:mb-0">
+                            <div className={`${pos % 2 === 0 ? "md:left-0" : "md:right-0" } w-full md:w-6/12 h-full flex flex-col order-2 md:order-1 justify-center md:absolute z-20`}>
+                                <div className="w-full bg-gray-100 shadow-md md:rounded-md pt-8 md:pb-8">
+                                    <header className="mx-8">
                                         <h4 className="text-primary font-medium text-xs">Featured Project</h4>
                                         <h2 className="text-2xl font-semibold">{edges.node.title}</h2>
                                         <h3 className="text-sm">{edges.node.description}</h3>
                                     </header>
-                                    <div className="flex opacity-70">
+                                    <div className="flex opacity-70 mx-8">
                                         { edges.node.source !== null && edges.node.source !== "" &&
                                             <OutboundLink href={edges.node.source} target="_blank" rel="noreferrer">
                                                 <svg className="fill-current h-full mt-2 mr-2" width="18" height="18" aria-hidden="true" focusable="false" data-prefix="fab" data-icon="github-alt" role="img" xmlns="https://www.w3.org/2000/svg" viewBox="0 0 480 512">
@@ -33,8 +33,8 @@ const FeaturedProjectList = ({data}) => {
                                             </OutboundLink>
                                         }
                                     </div>
-                                    <div className={`${pos % 2 === 0 ? "justify-start left-0 pl-8" : "justify-end right-0 pr-8"} w-full flex absolute mt-8`}>
-                                        <ul className={`${pos % 2 === 0 ? "justify-start" : "justify-end"} w-5/6 flex flex-wrap text-xs font-semibold text-gray-400 pt-2`}>
+                                    <div className={`${pos % 2 === 0 ? "md:justify-start md:left-0 md:pl-8" : "md:justify-end md:right-0 md:pr-8"} w-full flex md:absolute mt-8 py-2 md:py-0 md:mt-8 -px-8 md:mx-0 px-8 md:px-0 shadow-sm-i md:shadow-none`}>
+                                        <ul className={`${pos % 2 === 0 ? "md:justify-start" : "md:justify-end"} w-full md:w-5/6 flex flex-wrap text-xs font-semibold text-gray-500 md:text-gray-400 md:pt-2`}>
                                             {edges.node.stack !== null && edges.node.stack.split(", ").map(item => {
                                                 return(<li className="px-1 pb-2">{item}</li>)
                                             })}
@@ -42,7 +42,7 @@ const FeaturedProjectList = ({data}) => {
                                     </div>
                                 </div>
                             </div>
-                            <div className={`${pos % 2 === 0 ? "right-0" : "left-0" } w-7/12 flex flex-col items-center justify-center h-full absolute top-0 z-10`}>
+                            <div className={`${pos % 2 === 0 ? "md:right-0" : "md:left-0" } w-full md:w-7/12 flex flex-col items-center justify-center h-full order-1 md:order-2 md:absolute md:top-0 z-10`}>
                                 {edges.node.preview !== null &&
                                     <Img
                                         className="w-full bg-light-dark"

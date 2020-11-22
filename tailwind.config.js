@@ -63,6 +63,9 @@ module.exports = {
         "primary-light" : "#F26C4F",
         "accent" : "#00FFBB"
       },
+      boxShadow: {
+        "sm-i" : "0 -2px 2px 0 rgba(0, 0, 0, 0.05)",
+      },
       inset: {
         "screen-width" : "100vw"
       }
