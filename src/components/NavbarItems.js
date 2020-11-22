@@ -5,7 +5,7 @@ const NavbarItems = ({ showContact }) => {
     return (
         <>
             {/* Menu items for the navigation */}
-            <div className="text-sm md:flex-grow md:text-right">
+            <div className="text-sm md:text-base md:flex-grow md:text-right">
                 <Link to="/" className="transition duration-500 ease-in-out md:transform md:hover:scale-105 block mt-4 mr-4 md:inline-block font-medium md:mt-0 text-gray-300 focus:outline-none">Home</Link>
                 <Link to="/projects/software" className="transition duration-500 ease-in-out md:transform md:hover:scale-105 block mt-4 mr-4 md:inline-block font-medium md:mt-0 text-gray-300 focus:outline-none">Software Projects</Link>
                 <Link to="/projects/web" className="transition duration-500 ease-in-out md:transform md:hover:scale-105 block mt-4 mr-4 md:inline-block font-medium md:mt-0 text-gray-300 focus:outline-none">Web Projects</Link>
