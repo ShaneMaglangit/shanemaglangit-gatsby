@@ -1,4 +1,4 @@
-> Note: Future updates will be committed in a private repository
+> Note: Future updates will be committed in a private repository but the live site will stay up-to-date
 ## Live site :rocket:
 
 The live site can be found [here](https://www.shanemaglangit.com/)
